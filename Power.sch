@@ -1,0 +1,206 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Management
+LIBS:st-microelectronics
+LIBS:stm32
+LIBS:bldc-controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X04 P7
+U 1 1 577ECDF6
+P 850 6700
+F 0 "P7" H 850 6950 50  0000 C CNN
+F 1 "CON_PWR_BRD" V 950 6700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK_6410-04" H 850 6700 50  0001 C CNN
+F 3 "" H 850 6700 50  0000 C CNN
+	1    850  6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 6850 1350 6850
+Wire Wire Line
+	1350 6850 1350 7050
+$Comp
+L GND #PWR050
+U 1 1 577ED085
+P 1350 7050
+F 0 "#PWR050" H 1350 6800 50  0001 C CNN
+F 1 "GND" H 1350 6900 50  0000 C CNN
+F 2 "" H 1350 7050 50  0000 C CNN
+F 3 "" H 1350 7050 50  0000 C CNN
+	1    1350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D8
+U 1 1 577ED1D3
+P 1500 6750
+F 0 "D8" H 1500 6850 50  0000 C CNN
+F 1 "D" H 1500 6650 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 1500 6750 50  0001 C CNN
+F 3 "" H 1500 6750 50  0000 C CNN
+	1    1500 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 6750 1350 6750
+$Comp
+L C C13
+U 1 1 577ED254
+P 1800 6950
+F 0 "C13" H 1825 7050 50  0000 L CNN
+F 1 "2.2uF" H 1825 6850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1838 6800 50  0001 C CNN
+F 3 "" H 1800 6950 50  0000 C CNN
+	1    1800 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 577ED285
+P 2800 6950
+F 0 "C14" H 2825 7050 50  0000 L CNN
+F 1 "2.2uF" H 2825 6850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2838 6800 50  0001 C CNN
+F 3 "" H 2800 6950 50  0000 C CNN
+	1    2800 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 577ED346
+P 1800 7150
+F 0 "#PWR051" H 1800 6900 50  0001 C CNN
+F 1 "GND" H 1800 7000 50  0000 C CNN
+F 2 "" H 1800 7150 50  0000 C CNN
+F 3 "" H 1800 7150 50  0000 C CNN
+	1    1800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR052
+U 1 1 577ED360
+P 2800 7150
+F 0 "#PWR052" H 2800 6900 50  0001 C CNN
+F 1 "GND" H 2800 7000 50  0000 C CNN
+F 2 "" H 2800 7150 50  0000 C CNN
+F 3 "" H 2800 7150 50  0000 C CNN
+	1    2800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 577ED37A
+P 2300 7150
+F 0 "#PWR053" H 2300 6900 50  0001 C CNN
+F 1 "GND" H 2300 7000 50  0000 C CNN
+F 2 "" H 2300 7150 50  0000 C CNN
+F 3 "" H 2300 7150 50  0000 C CNN
+	1    2300 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7050 2300 7150
+Wire Wire Line
+	1800 7100 1800 7150
+Wire Wire Line
+	2800 7100 2800 7150
+Wire Wire Line
+	2700 6750 2950 6750
+Wire Wire Line
+	2800 6750 2800 6800
+Wire Wire Line
+	1650 6750 1900 6750
+Wire Wire Line
+	1800 6550 1800 6800
+Connection ~ 1800 6750
+$Comp
+L +5V #PWR054
+U 1 1 577ED523
+P 1800 6550
+F 0 "#PWR054" H 1800 6400 50  0001 C CNN
+F 1 "+5V" H 1800 6690 50  0000 C CNN
+F 2 "" H 1800 6550 50  0000 C CNN
+F 3 "" H 1800 6550 50  0000 C CNN
+	1    1800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR055
+U 1 1 577ED553
+P 2950 6550
+F 0 "#PWR055" H 2950 6400 50  0001 C CNN
+F 1 "VCC" H 2950 6700 50  0000 C CNN
+F 2 "" H 2950 6550 50  0000 C CNN
+F 3 "" H 2950 6550 50  0000 C CNN
+	1    2950 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6750 2950 6550
+Connection ~ 2800 6750
+Text HLabel 1300 6350 1    60   Input ~ 0
+RX_PWR_BOARD
+Text HLabel 1150 6350 1    60   Input ~ 0
+TX_PWR_BOARD
+Wire Wire Line
+	1150 6350 1150 6550
+Wire Wire Line
+	1150 6550 1050 6550
+Wire Wire Line
+	1300 6350 1300 6650
+Wire Wire Line
+	1300 6650 1050 6650
+$Comp
+L LD1117S33TR U7
+U 1 1 577F02C2
+P 2300 6800
+F 0 "U7" H 2300 7050 50  0000 C CNN
+F 1 "LD1117S33TR" H 2300 7000 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 2300 6900 50  0000 C CNN
+F 3 "" H 2300 6800 50  0000 C CNN
+	1    2300 6800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
