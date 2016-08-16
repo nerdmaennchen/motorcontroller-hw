@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:bldc-controller-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,12 +32,14 @@ LIBS:valves
 LIBS:Power_Management
 LIBS:st-microelectronics
 LIBS:stm32
+LIBS:w_analog
+LIBS:mpu6000
 LIBS:bldc-controller-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 13
 Title ""
 Date ""
 Rev ""
@@ -94,10 +97,10 @@ Wire Wire Line
 	1500 1250 1500 1200
 Connection ~ 1500 1200
 $Comp
-L GND #PWR048
+L GND #PWR021
 U 1 1 57827E10
 P 1500 1600
-F 0 "#PWR048" H 1500 1350 50  0001 C CNN
+F 0 "#PWR021" H 1500 1350 50  0001 C CNN
 F 1 "GND" H 1500 1450 50  0000 C CNN
 F 2 "" H 1500 1600 50  0000 C CNN
 F 3 "" H 1500 1600 50  0000 C CNN
@@ -105,10 +108,10 @@ F 3 "" H 1500 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR049
+L GND #PWR022
 U 1 1 57827E2B
 P 1900 1600
-F 0 "#PWR049" H 1900 1350 50  0001 C CNN
+F 0 "#PWR022" H 1900 1350 50  0001 C CNN
 F 1 "GND" H 1900 1450 50  0000 C CNN
 F 2 "" H 1900 1600 50  0000 C CNN
 F 3 "" H 1900 1600 50  0000 C CNN

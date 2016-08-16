@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:bldc-controller-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,12 +32,14 @@ LIBS:valves
 LIBS:Power_Management
 LIBS:st-microelectronics
 LIBS:stm32
+LIBS:w_analog
+LIBS:mpu6000
 LIBS:bldc-controller-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 13
 Title "DreErolf"
 Date ""
 Rev ""
@@ -58,10 +61,10 @@ F 3 "" V 2450 5900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR044
+L +5V #PWR023
 U 1 1 577D25D3
 P 1900 5350
-F 0 "#PWR044" H 1900 5200 50  0001 C CNN
+F 0 "#PWR023" H 1900 5200 50  0001 C CNN
 F 1 "+5V" H 1900 5490 50  0000 C CNN
 F 2 "" H 1900 5350 50  0000 C CNN
 F 3 "" H 1900 5350 50  0000 C CNN
@@ -75,10 +78,10 @@ Wire Wire Line
 Wire Wire Line
 	1900 5800 2200 5800
 $Comp
-L GND #PWR045
+L GND #PWR024
 U 1 1 577D264D
 P 1900 6350
-F 0 "#PWR045" H 1900 6100 50  0001 C CNN
+F 0 "#PWR024" H 1900 6100 50  0001 C CNN
 F 1 "GND" H 1900 6200 50  0000 C CNN
 F 2 "" H 1900 6350 50  0000 C CNN
 F 3 "" H 1900 6350 50  0000 C CNN
@@ -103,12 +106,12 @@ Wire Wire Line
 Wire Wire Line
 	2200 6100 1900 6100
 $Comp
-L D_Schottky D?
+L D_Schottky D4
 U 1 1 579031F5
 P 1900 5550
-F 0 "D?" H 1900 5650 50  0000 C CNN
+F 0 "D4" H 1900 5650 50  0000 C CNN
 F 1 "D_Schottky" H 1900 5450 50  0000 C CNN
-F 2 "" H 1900 5550 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 1900 5550 50  0001 C CNN
 F 3 "" H 1900 5550 50  0000 C CNN
 	1    1900 5550
 	0    1    1    0   

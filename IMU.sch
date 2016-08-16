@@ -1,0 +1,238 @@
+EESchema Schematic File Version 2
+LIBS:bldc-controller-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Management
+LIBS:st-microelectronics
+LIBS:stm32
+LIBS:w_analog
+LIBS:mpu6000
+LIBS:bldc-controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C11
+U 1 1 577E6865
+P 2150 2400
+F 0 "C11" H 2175 2500 50  0000 L CNN
+F 1 "100nF" H 2175 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2188 2250 50  0001 C CNN
+F 3 "" H 2150 2400 50  0000 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2250 2150 2250
+$Comp
+L GND #PWR037
+U 1 1 577E6AA9
+P 2150 2600
+F 0 "#PWR037" H 2150 2350 50  0001 C CNN
+F 1 "GND" H 2150 2450 50  0000 C CNN
+F 2 "" H 2150 2600 50  0000 C CNN
+F 3 "" H 2150 2600 50  0000 C CNN
+	1    2150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2550 2150 2600
+$Comp
+L C C16
+U 1 1 5782CBEF
+P 3800 3500
+F 0 "C16" H 3825 3600 50  0000 L CNN
+F 1 "2.2uF" H 3825 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3838 3350 50  0001 C CNN
+F 3 "" H 3800 3500 50  0000 C CNN
+	1    3800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 5782CC39
+P 5150 2600
+F 0 "C15" H 5175 2700 50  0000 L CNN
+F 1 "2.2uF" H 5175 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5188 2450 50  0001 C CNN
+F 3 "" H 5150 2600 50  0000 C CNN
+	1    5150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MPU6000 U5
+U 1 1 5783AF11
+P 4050 2150
+F 0 "U5" H 4050 2150 60  0000 C CNN
+F 1 "MPU6000" H 4050 2150 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 4050 2150 60  0001 C CNN
+F 3 "" H 4050 2150 60  0000 C CNN
+	1    4050 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 5783B247
+P 4500 1050
+F 0 "#PWR038" H 4500 800 50  0001 C CNN
+F 1 "GND" H 4500 900 50  0000 C CNN
+F 2 "" H 4500 1050 50  0000 C CNN
+F 3 "" H 4500 1050 50  0000 C CNN
+	1    4500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1050 4500 1000
+Wire Wire Line
+	4500 1000 4300 1000
+Wire Wire Line
+	4300 1000 4300 1100
+$Comp
+L GND #PWR039
+U 1 1 5783B412
+P 4300 3250
+F 0 "#PWR039" H 4300 3000 50  0001 C CNN
+F 1 "GND" H 4300 3100 50  0000 C CNN
+F 2 "" H 4300 3250 50  0000 C CNN
+F 3 "" H 4300 3250 50  0000 C CNN
+	1    4300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3150 4300 3250
+$Comp
+L VCC #PWR040
+U 1 1 5783B458
+P 3550 3250
+F 0 "#PWR040" H 3550 3100 50  0001 C CNN
+F 1 "VCC" H 3550 3400 50  0000 C CNN
+F 2 "" H 3550 3250 50  0000 C CNN
+F 3 "" H 3550 3250 50  0000 C CNN
+	1    3550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3250 3550 3300
+Wire Wire Line
+	3550 3300 3800 3300
+Wire Wire Line
+	3800 3150 3800 3350
+Text HLabel 2850 2000 0    60   Input ~ 0
+nCS
+Wire Wire Line
+	2850 2000 3000 2000
+Text HLabel 5150 1900 2    60   Input ~ 0
+SDI
+Wire Wire Line
+	5050 1900 5150 1900
+Text HLabel 5150 2000 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	5150 2000 5050 2000
+Text HLabel 2850 2100 0    60   Output ~ 0
+SDO
+Wire Wire Line
+	2850 2100 3000 2100
+Wire Wire Line
+	2150 2200 3000 2200
+Wire Wire Line
+	2150 2200 2150 2250
+Connection ~ 3800 3300
+$Comp
+L GND #PWR041
+U 1 1 5783C0C8
+P 3800 3700
+F 0 "#PWR041" H 3800 3450 50  0001 C CNN
+F 1 "GND" H 3800 3550 50  0000 C CNN
+F 2 "" H 3800 3700 50  0000 C CNN
+F 3 "" H 3800 3700 50  0000 C CNN
+	1    3800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3650 3800 3700
+Wire Wire Line
+	5050 2300 5150 2300
+Wire Wire Line
+	5150 2300 5150 2450
+$Comp
+L GND #PWR042
+U 1 1 5783C385
+P 5150 2850
+F 0 "#PWR042" H 5150 2600 50  0001 C CNN
+F 1 "GND" H 5150 2700 50  0000 C CNN
+F 2 "" H 5150 2850 50  0000 C CNN
+F 3 "" H 5150 2850 50  0000 C CNN
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2750 5150 2850
+NoConn ~ 5050 2400
+NoConn ~ 5050 2200
+NoConn ~ 5050 2100
+NoConn ~ 4200 1100
+NoConn ~ 4100 1100
+NoConn ~ 4000 1100
+NoConn ~ 3900 1100
+NoConn ~ 3800 1100
+NoConn ~ 3000 1900
+$Comp
+L GND #PWR043
+U 1 1 5783C708
+P 2450 2600
+F 0 "#PWR043" H 2450 2350 50  0001 C CNN
+F 1 "GND" H 2450 2450 50  0000 C CNN
+F 2 "" H 2450 2600 50  0000 C CNN
+F 3 "" H 2450 2600 50  0000 C CNN
+	1    2450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2600 2450 2300
+Wire Wire Line
+	2450 2300 3000 2300
+NoConn ~ 3000 2400
+NoConn ~ 3900 3150
+NoConn ~ 4000 3150
+NoConn ~ 4100 3150
+NoConn ~ 4200 3150
+$EndSCHEMATC
