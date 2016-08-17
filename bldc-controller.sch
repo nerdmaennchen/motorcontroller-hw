@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -350,9 +350,9 @@ Wire Wire Line
 	3250 7100 3300 7100
 Wire Wire Line
 	3300 7000 3250 7000
-Text Label 3300 7400 0    60   ~ 0
-PWM_EN_A
 Text Label 3300 7500 0    60   ~ 0
+PWM_EN_A
+Text Label 3300 7400 0    60   ~ 0
 PWM_EN_B
 Wire Wire Line
 	3300 7500 3250 7500
@@ -519,13 +519,13 @@ Wire Wire Line
 Text Label 1400 2050 2    60   ~ 0
 NRST
 Connection ~ 1450 2050
-Text Label 8850 2350 0    60   ~ 0
-PWM_A_1
-Text Label 8850 2450 0    60   ~ 0
-PWM_A_2
 Text Label 8850 2550 0    60   ~ 0
-PWM_B_1
+PWM_A_1
 Text Label 8850 2650 0    60   ~ 0
+PWM_A_2
+Text Label 8850 2450 0    60   ~ 0
+PWM_B_1
+Text Label 8850 2350 0    60   ~ 0
 PWM_B_2
 Wire Wire Line
 	8850 2650 8800 2650
@@ -580,10 +580,6 @@ F 3 "" H 9800 4800 50  0000 C CNN
 $EndComp
 Text Label 1750 3650 2    60   ~ 0
 COM_RX_TX_1
-Text Label 1750 3850 2    60   ~ 0
-COM_RX_TX_2
-Wire Wire Line
-	1750 3850 1800 3850
 Wire Wire Line
 	1800 3650 1750 3650
 Text Label 1750 4250 2    60   ~ 0
@@ -611,8 +607,7 @@ S 5050 7000 550  450
 U 57903743
 F0 "Power" 60
 F1 "Power.sch" 60
-F2 "RX_PWR_BOARD" I R 5600 7050 60 
-F3 "TX_PWR_BOARD" I R 5600 7150 60 
+F2 "RX_TX_PWR_BOARD" I R 5600 7200 60 
 $EndSheet
 Text Label 1750 4150 2    60   ~ 0
 IMU_SPI_SCK
@@ -623,10 +618,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 3750 1750 3650
 Wire Wire Line
-	1750 3850 1750 3950
-Wire Wire Line
-	1750 3950 1800 3950
-Wire Wire Line
 	8850 3650 8800 3650
 Wire Wire Line
 	8800 3550 8850 3550
@@ -634,14 +625,6 @@ Text Label 1750 4050 2    60   ~ 0
 IMU_SPI_CS
 Wire Wire Line
 	1800 4050 1750 4050
-Text Label 8850 4150 0    60   ~ 0
-UART_LIDAR_TX
-Text Label 8850 4250 0    60   ~ 0
-UART_LIDAR_RX
-Wire Wire Line
-	8850 4250 8800 4250
-Wire Wire Line
-	8800 4150 8850 4150
 Text Label 8850 3950 0    60   ~ 0
 SENSE_V_A_1
 Text Label 8850 4050 0    60   ~ 0
@@ -746,31 +729,6 @@ LED_MOSI
 Wire Wire Line
 	10600 3100 10650 3100
 $Sheet
-S 10300 5800 850  300 
-U 57ACFC7C
-F0 "CON_LIDAR" 60
-F1 "CON_LIDAR.sch" 60
-F2 "LIDAR_MOTOR_EN" I L 10300 5850 60 
-F3 "LIDAR_RX" I L 10300 5950 60 
-F4 "LIDAR_TX" I L 10300 6050 60 
-$EndSheet
-Text Label 10250 5950 2    60   ~ 0
-UART_LIDAR_RX
-Text Label 10250 6050 2    60   ~ 0
-UART_LIDAR_TX
-Wire Wire Line
-	10250 6050 10300 6050
-Wire Wire Line
-	10250 5950 10300 5950
-Text Label 8850 4350 0    60   ~ 0
-LIDAR_MOTOR_EN
-Wire Wire Line
-	8850 4350 8800 4350
-Text Label 10250 5850 2    60   ~ 0
-LIDAR_MOTOR_EN
-Wire Wire Line
-	10250 5850 10300 5850
-$Sheet
 S 2350 6350 500  400 
 U 57AD42C9
 F0 "CON_MOTOR" 60
@@ -851,14 +809,10 @@ U 57B1F4B0
 F0 "Holes" 60
 F1 "Holes.sch" 60
 $EndSheet
-Text Label 5700 7050 0    60   ~ 0
+Text Label 5700 7200 0    60   ~ 0
 COM_RX_TX_1
-Text Label 5700 7150 0    60   ~ 0
-COM_RX_TX_2
 Wire Wire Line
-	5700 7150 5600 7150
-Wire Wire Line
-	5600 7050 5700 7050
+	5600 7200 5700 7200
 Text Label 700  5950 0    60   ~ 0
 IMU_SPI_CS
 $Comp
@@ -872,4 +826,9 @@ F 3 "" H 5500 2800 50  0000 C CNN
 	1    5400 3350
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8800 4150
+NoConn ~ 8800 4250
+NoConn ~ 8800 4350
+NoConn ~ 1800 3950
+NoConn ~ 1800 3850
 $EndSCHEMATC

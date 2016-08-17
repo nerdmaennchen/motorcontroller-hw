@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 13
+Sheet 2 12
 Title ""
 Date ""
 Rev ""
@@ -492,20 +492,4 @@ F 3 "" H 2800 950 50  0000 C CNN
 	1    2800 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L PWR_FLAG #FLG020
-U 1 1 57B20A0F
-P 3550 1200
-F 0 "#FLG020" H 3550 1295 50  0001 C CNN
-F 1 "PWR_FLAG" H 3550 1380 50  0000 C CNN
-F 2 "" H 3550 1200 50  0000 C CNN
-F 3 "" H 3550 1200 50  0000 C CNN
-	1    3550 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 1200 3550 1300
-Wire Wire Line
-	3550 1300 3350 1300
-Connection ~ 3350 1300
 $EndSCHEMATC
