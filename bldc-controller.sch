@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -829,6 +829,28 @@ $EndComp
 NoConn ~ 8800 4150
 NoConn ~ 8800 4250
 NoConn ~ 8800 4350
-NoConn ~ 1800 3950
-NoConn ~ 1800 3850
+Text Label 1750 3850 2    60   ~ 0
+PWM_1
+Text Label 1750 3950 2    60   ~ 0
+PWM_2
+Wire Wire Line
+	1750 3850 1800 3850
+Wire Wire Line
+	1800 3950 1750 3950
+$Sheet
+S 10650 3450 500  250 
+U 57B721E0
+F0 "2CON" 60
+F1 "2CON.sch" 60
+F2 "SIG_1" I L 10650 3500 60 
+F3 "SIG_2" I L 10650 3600 60 
+$EndSheet
+Text Label 10600 3600 2    60   ~ 0
+PWM_1
+Text Label 10600 3500 2    60   ~ 0
+PWM_2
+Wire Wire Line
+	10600 3600 10650 3600
+Wire Wire Line
+	10650 3500 10600 3500
 $EndSCHEMATC

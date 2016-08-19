@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -68,7 +68,7 @@ U 1 1 57ACE598
 P 1500 950
 F 0 "P1" H 1500 1150 50  0000 C CNN
 F 1 "CON_LED" V 1600 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 1500 950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1500 950 50  0001 C CNN
 F 3 "" H 1500 950 50  0000 C CNN
 	1    1500 950 
 	1    0    0    -1  
@@ -84,10 +84,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 1050 1250 1100
 $Comp
-L +5VA #PWR?
+L +5VA #PWR048
 U 1 1 57B57C97
 P 1250 800
-F 0 "#PWR?" H 1250 650 50  0001 C CNN
+F 0 "#PWR048" H 1250 650 50  0001 C CNN
 F 1 "+5VA" H 1250 940 50  0000 C CNN
 F 2 "" H 1250 800 50  0000 C CNN
 F 3 "" H 1250 800 50  0000 C CNN
