@@ -188,8 +188,6 @@ Wire Wire Line
 Wire Wire Line
 	1350 6850 1350 7050
 Wire Wire Line
-	1200 6750 1050 6750
-Wire Wire Line
 	2300 7050 2300 7150
 Wire Wire Line
 	1800 7100 1800 7150
@@ -208,8 +206,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 6550 1050 6550
 Wire Wire Line
-	1050 6650 1450 6650
-Wire Wire Line
 	1150 7050 1150 7000
 Wire Wire Line
 	1150 7000 1350 7000
@@ -217,7 +213,7 @@ Connection ~ 1350 7000
 Wire Wire Line
 	2800 6800 2800 6750
 Wire Wire Line
-	1200 6400 1200 6750
+	1200 6400 1200 6650
 $Comp
 L +5V #PWR034
 U 1 1 57B42FF7
@@ -271,7 +267,6 @@ Wire Wire Line
 Connection ~ 1800 6250
 Wire Wire Line
 	1450 5850 1950 5850
-Connection ~ 1450 6650
 Wire Wire Line
 	1200 6450 1350 6450
 Wire Wire Line
@@ -295,4 +290,8 @@ Wire Wire Line
 Connection ~ 1800 5850
 Text Notes 1500 5800 0    60   ~ 0
 "unsafe 5V"
+Wire Wire Line
+	1200 6650 1050 6650
+Wire Wire Line
+	1450 6750 1050 6750
 $EndSCHEMATC
