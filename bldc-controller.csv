@@ -1,0 +1,38 @@
+Qty,Value,Footprint,
+12,	2.2uF, 	Capacitors_SMD:C_0603
+3,	10nF, 	Capacitors_SMD:C_0603
+1,	220nF, 	Capacitors_SMD:C_0603
+3,	100nF, 	Capacitors_SMD:C_0603
+1,	4.7uF, 	Capacitors_SMD:C_0805
+2,	22pF, 	Capacitors_SMD:C_0603
+1,	status, 	LEDs:LED_0805
+3,	D_Small, 	Diodes_SMD:SOD-323
+1,	D_Schottky, 	Diodes_SMD:SOD-323
+1,	L6205PD, 	BLDC:SOIC-20
+1,	USB_OTG, 	Connect:USB_Micro-B
+1,	CON_SWD, 	Socket_Strips:Socket_Strip_Straight_1x05
+1,	CON_PWR_BRD, 	Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight
+1,	CON_LED, 	Pin_Headers:Pin_Header_Straight_1x03
+1,	CON_MOTOR, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol
+1,	CON_HALL, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol
+4,	MOUNTING, 	Connect:1pin
+2,	CONN_01X03, 	Pin_Headers:Pin_Header_Straight_1x03
+1,	NA, 	Resistors_SMD:R_0603
+1,	0, 	Resistors_SMD:R_0603
+3,	10k, 	Resistors_SMD:R_0603
+1,	330, 	Resistors_SMD:R_0603
+1,	100, 	Resistors_SMD:R_0603
+4,	.1, 	Resistors_SMD:R_1206
+1,	10k, 	Resistors_SMD:R_Array_Concave_4x0603
+2,	1k, 	Resistors_SMD:R_Array_Concave_4x0603
+1,	STM32F405R, 	Housings_QFP:TQFP-64_10x10mm_Pitch0.5mm
+1,	LD1117S33TR, 	TO_SOT_Packages_SMD:SOT-223
+1,	MPU6000, 	Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm
+1,	Crystal, 	Crystals:Crystal_SMD_5032_2Pads
+
+
+Title,
+Date,
+Generated,Sa 27 Aug 2016 14:40:31 CEST
+Total Parts,58
+Total Unique Parts,30

@@ -93,10 +93,6 @@ F 3 "" H 1400 1650 50  0000 C CNN
 	1    1400 1650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1500 1650 1550 1650
-Wire Wire Line
-	1750 1650 1800 1650
 $Comp
 L VPP #PWR011
 U 1 1 578D3DEA
@@ -119,12 +115,6 @@ F 3 "" V 1200 1550 50  0000 C CNN
 	1    1200 1550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1000 1650 1300 1650
-Wire Wire Line
-	1350 1400 1350 1550
-Wire Wire Line
-	1350 1550 1800 1550
 $Comp
 L C_Small C1
 U 1 1 578D3E6A
@@ -136,19 +126,6 @@ F 3 "" H 1200 1250 50  0000 C CNN
 	1    1200 1250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1200 1350 1200 1450
-Wire Wire Line
-	1200 1400 1350 1400
-Connection ~ 1200 1400
-Wire Wire Line
-	1200 1050 1200 1150
-Wire Wire Line
-	1200 1100 1000 1100
-Wire Wire Line
-	1000 1100 1000 1450
-Connection ~ 1200 1100
-Connection ~ 1200 1650
 Text HLabel 1150 1850 0    60   Input ~ 0
 IN1_A
 Text HLabel 1150 1950 0    60   Input ~ 0
@@ -157,14 +134,6 @@ Text HLabel 1150 2250 0    60   Input ~ 0
 IN1_B
 Text HLabel 1150 2350 0    60   Input ~ 0
 IN2_B
-Wire Wire Line
-	1150 1850 1800 1850
-Wire Wire Line
-	1150 1950 1800 1950
-Wire Wire Line
-	1150 2250 1800 2250
-Wire Wire Line
-	1150 2350 1800 2350
 Text HLabel 1150 2450 0    60   Input ~ 0
 EN_B
 Text HLabel 1150 2050 0    60   Input ~ 0
@@ -180,13 +149,6 @@ F 3 "" H 3350 1150 50  0000 C CNN
 	1    3350 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3350 1150 3350 2150
-Wire Wire Line
-	3350 1650 3200 1650
-Wire Wire Line
-	3350 2150 3200 2150
-Connection ~ 3350 1650
 Text HLabel 3550 1750 2    60   Output ~ 0
 OUT1_A
 Text HLabel 3550 1850 2    60   Output ~ 0
@@ -195,14 +157,6 @@ Text HLabel 3550 2250 2    60   Output ~ 0
 OUT2_A
 Text HLabel 3550 2350 2    60   Output ~ 0
 OUT2_B
-Wire Wire Line
-	3200 1750 3550 1750
-Wire Wire Line
-	3200 1850 3550 1850
-Wire Wire Line
-	3200 2250 3550 2250
-Wire Wire Line
-	3200 2350 3550 2350
 $Comp
 L GND #PWR013
 U 1 1 578D486E
@@ -236,8 +190,6 @@ F 3 "" H 1300 2450 50  0000 C CNN
 	1    1300 2450
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1150 2450 1200 2450
 $Comp
 L GND #PWR014
 U 1 1 578D4B75
@@ -249,8 +201,6 @@ F 3 "" H 1550 2800 50  0000 C CNN
 	1    1550 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 2800 1550 2750
 $Comp
 L R_Small R6
 U 1 1 578D4CDE
@@ -273,18 +223,6 @@ F 3 "" H 1750 2650 50  0000 C CNN
 	1    1750 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 2450 1800 2450
-Wire Wire Line
-	1550 2550 1550 2450
-Connection ~ 1550 2450
-Wire Wire Line
-	1750 2550 1750 2050
-Wire Wire Line
-	1400 2050 1800 2050
-Connection ~ 1750 2050
-Wire Wire Line
-	1200 2050 1150 2050
 $Comp
 L GND #PWR015
 U 1 1 578D4EB3
@@ -296,8 +234,6 @@ F 3 "" H 1750 2800 50  0000 C CNN
 	1    1750 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 2800 1750 2750
 $Comp
 L C_Small C20
 U 1 1 578D502E
@@ -386,14 +322,6 @@ F 3 "" H 4000 2800 50  0000 C CNN
 	1    4000 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 1950 3850 1950
-Wire Wire Line
-	3300 2900 3300 3000
-Wire Wire Line
-	3300 2950 3450 2950
-Wire Wire Line
-	3450 2950 3450 2900
 $Comp
 L GND #PWR018
 U 1 1 578D56C4
@@ -405,13 +333,6 @@ F 3 "" H 3300 3000 50  0000 C CNN
 	1    3300 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3300 2950
-Wire Wire Line
-	3850 2900 3850 3000
-Wire Wire Line
-	3850 2950 4000 2950
-Wire Wire Line
-	4000 2950 4000 2900
 $Comp
 L GND #PWR019
 U 1 1 578D5888
@@ -423,6 +344,100 @@ F 3 "" H 3850 3000 50  0000 C CNN
 	1    3850 3000
 	1    0    0    -1  
 $EndComp
+Text HLabel 4050 2650 2    60   Output ~ 0
+SENSE_A
+Text HLabel 4050 2550 2    60   Output ~ 0
+SENSE_B
+$Comp
+L C_Small C22
+U 1 1 57ADFC17
+P 2800 950
+F 0 "C22" H 2810 1020 50  0000 L CNN
+F 1 "4.7uF" H 2810 870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2800 950 50  0001 C CNN
+F 3 "" H 2800 950 50  0000 C CNN
+	1    2800 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1650 1550 1650
+Wire Wire Line
+	1750 1650 1800 1650
+Wire Wire Line
+	1000 1650 1300 1650
+Wire Wire Line
+	1350 1400 1350 1550
+Wire Wire Line
+	1350 1550 1800 1550
+Wire Wire Line
+	1200 1350 1200 1450
+Wire Wire Line
+	1200 1400 1350 1400
+Connection ~ 1200 1400
+Wire Wire Line
+	1200 1050 1200 1150
+Wire Wire Line
+	1200 1100 1000 1100
+Wire Wire Line
+	1000 1100 1000 1450
+Connection ~ 1200 1100
+Connection ~ 1200 1650
+Wire Wire Line
+	1150 1850 1800 1850
+Wire Wire Line
+	1150 1950 1800 1950
+Wire Wire Line
+	1150 2250 1800 2250
+Wire Wire Line
+	1150 2350 1800 2350
+Wire Wire Line
+	3350 1150 3350 2150
+Wire Wire Line
+	3350 1650 3200 1650
+Wire Wire Line
+	3350 2150 3200 2150
+Connection ~ 3350 1650
+Wire Wire Line
+	3200 1750 3550 1750
+Wire Wire Line
+	3200 1850 3550 1850
+Wire Wire Line
+	3200 2250 3550 2250
+Wire Wire Line
+	3200 2350 3550 2350
+Wire Wire Line
+	1150 2450 1200 2450
+Wire Wire Line
+	1550 2800 1550 2750
+Wire Wire Line
+	1400 2450 1800 2450
+Wire Wire Line
+	1550 2550 1550 2450
+Connection ~ 1550 2450
+Wire Wire Line
+	1750 2550 1750 2050
+Wire Wire Line
+	1400 2050 1800 2050
+Connection ~ 1750 2050
+Wire Wire Line
+	1200 2050 1150 2050
+Wire Wire Line
+	1750 2800 1750 2750
+Wire Wire Line
+	3200 1950 3850 1950
+Wire Wire Line
+	3300 2900 3300 3000
+Wire Wire Line
+	3300 2950 3450 2950
+Wire Wire Line
+	3450 2950 3450 2900
+Connection ~ 3300 2950
+Wire Wire Line
+	3850 2900 3850 3000
+Wire Wire Line
+	3850 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 2900
 Connection ~ 3850 2950
 Wire Wire Line
 	3300 2450 3300 2700
@@ -436,11 +451,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 2650 4050 2650
 Connection ~ 3850 2650
-Text HLabel 4050 2650 2    60   Output ~ 0
-SENSE_A
 Connection ~ 4000 2650
-Text HLabel 4050 2550 2    60   Output ~ 0
-SENSE_B
 Wire Wire Line
 	3300 2650 3450 2650
 Wire Wire Line
@@ -481,15 +492,4 @@ Connection ~ 2400 2700
 Wire Wire Line
 	2500 2650 2500 2700
 Connection ~ 2500 2700
-$Comp
-L C_Small C22
-U 1 1 57ADFC17
-P 2800 950
-F 0 "C22" H 2810 1020 50  0000 L CNN
-F 1 "4.7uF" H 2810 870 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2800 950 50  0001 C CNN
-F 3 "" H 2800 950 50  0000 C CNN
-	1    2800 950 
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

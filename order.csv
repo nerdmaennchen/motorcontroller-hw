@@ -1,0 +1,81 @@
+Title,
+Date,
+Generated,Mo 22 Aug 2016 11:28:47 CEST
+Total Parts,58
+Total Unique Parts,30
+
+
+
+Qty, Value, Footprint,
+200,	10nF, 	Capacitors_SMD:C_0603
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/CL10B103JB8NNNC/1276-1103-1-ND/3889189
+
+200,	220nF, 	Capacitors_SMD:C_0603
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/CL10B224KO8NNNC/1276-1112-1-ND/3889198
+
+200,	100nF, 	Capacitors_SMD:C_0603
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/CL10F104ZO8NNNC/1276-1258-1-ND/3889344
+
+200,	4.7uF, 	Capacitors_SMD:C_0805
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/CL10A475KQ8NNNC/1276-1045-1-ND/3889131
+
+200,	22pF, 	Capacitors_SMD:C_0603
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/CL10C220JB8NNNC/1276-1023-1-ND/3889109
+
+100,	status, 	LEDs:LED_0805
+http://www.digikey.de/product-detail/de/osram-opto-semiconductors-inc/LG-R971-KN-1/475-1410-1-ND/1802598
+
+100,	D_Small, 	Diodes_SMD:SOD-323
+http://www.digikey.de/product-detail/de/panasonic-electronic-components/DB2J20900L/DB2J20900LCT-ND/2334417
+
+5,	L6205PD, 	BLDC:SOIC-20
+http://www.digikey.de/product-detail/de/stmicroelectronics/L6205PD/497-3642-5-ND/585944
+
+25,	USB_OTG, 	Connect:USB_Micro-B
+http://www.digikey.de/product-detail/de/amphenol-fci/10118194-0001LF/609-4618-1-ND/2785382
+
+10,	CON_SWD, 	Socket_Strips:Socket_Strip_Straight_1x05
+http://www.digikey.de/product-detail/de/sullins-connector-solutions/PPTC221LFBN-RC/S7020-ND/810160
+
+20,	CON_LED, 	Pin_Headers:Pin_Header_Straight_1x03
+http://www.digikey.de/product-detail/de/sullins-connector-solutions/PREC020SAAN-RC/S1012EC-20-ND/2774834
+
+10,	CON_MOTOR, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol
+http://www.digikey.de/product-detail/de/on-shore-technology-inc/OSTVN04A150/ED10563-ND/1588864
+
+10,	CON_HALL, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol
+http://www.digikey.de/product-detail/de/on-shore-technology-inc/OSTVN05A150/ED10564-ND/1588865
+
+200,	0, 	Resistors_SMD:R_0603
+http://www.digikey.de/product-detail/de/samsung-electro-mechanics-america-inc/RC1608J000CS/1276-3510-1-ND/3903613
+
+200,	10k, 	Resistors_SMD:R_0603
+http://www.digikey.de/product-detail/de/yageo/RC0603JR-0710KL/311-10KGRCT-ND/729647
+
+200,	330, 	Resistors_SMD:R_0603
+http://www.digikey.de/product-detail/de/yageo/RC0603JR-07330RL/311-330GRCT-ND/729716
+
+200,	100, 	Resistors_SMD:R_0603
+http://www.digikey.de/product-detail/de/yageo/RC0603JR-07100RL/311-100GRCT-ND/729644
+
+50,	.1, 	Resistors_SMD:R_1206
+http://www.digikey.de/product-detail/de/te-connectivity-amp-connectors/RLP73K2BR10JTD/A109842CT-ND/4032608
+
+100,	10k, 	Resistors_SMD:R_Array_Concave_4x0603
+http://www.digikey.de/product-detail/de/cts-resistor-products/742C083103JP/742C083103JPCT-ND/1124572
+
+100,	1k, 	Resistors_SMD:R_Array_Concave_4x0603
+http://www.digikey.de/product-detail/de/cts-resistor-products/742C083102JP/742C083102JPCT-ND/1124573
+
+5,	STM32F405R, 	Housings_QFP:TQFP-64_10x10mm_Pitch0.5mm
+http://www.digikey.de/product-detail/de/stmicroelectronics/STM32F405RGT6/497-11767-ND/2754208
+
+20,	LD1117S33TR, 	TO_SOT_Packages_SMD:SOT-223
+http://www.digikey.de/product-detail/de/stmicroelectronics/LD1117S33TR/497-1242-1-ND/586242
+
+2,	MPU6000, 	Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm
+http://www.digikey.de/product-detail/de/invensense/MPU-6000/1428-1005-1-ND/4038006
+
+10,	Crystal, 	Crystals:Crystal_SMD_5032_2Pads
+http://www.digikey.de/product-detail/de/abracon-llc/ABM3-8.000MHZ-D2Y-T/535-10630-1-ND/2344632
+
