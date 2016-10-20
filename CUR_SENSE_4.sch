@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 13
+Sheet 6 12
 Title ""
 Date ""
 Rev ""
@@ -92,7 +92,7 @@ L R_PACK4 RP3
 U 1 1 57A2257E
 P 1950 700
 F 0 "RP3" H 1950 1150 50  0000 C CNN
-F 1 "1k" H 1950 650 50  0000 C CNN
+F 1 "10k" H 1950 650 50  0000 C CNN
 F 2 "Resistors_SMD:R_Array_Concave_4x0603" H 1950 700 50  0001 C CNN
 F 3 "" H 1950 700 50  0000 C CNN
 	1    1950 700 

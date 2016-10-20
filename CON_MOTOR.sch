@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 8 12
 Title ""
 Date ""
 Rev ""
@@ -49,31 +49,27 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_01X04 P3
-U 1 1 57AD4602
-P 1300 850
-F 0 "P3" H 1300 1100 50  0000 C CNN
-F 1 "CON_MOTOR" V 1400 850 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 1300 850 50  0001 C CNN
-F 3 "" H 1300 850 50  0000 C CNN
-	1    1300 850 
-	1    0    0    -1  
-$EndComp
 Text HLabel 1000 800  0    60   Input ~ 0
 A
 Text HLabel 1000 900  0    60   Input ~ 0
 B
 Text HLabel 1000 700  0    60   Input ~ 0
 C
-Text HLabel 1000 1000 0    60   Input ~ 0
-D
-Wire Wire Line
-	1000 1000 1100 1000
 Wire Wire Line
 	1100 900  1000 900 
 Wire Wire Line
 	1000 800  1100 800 
 Wire Wire Line
 	1100 700  1000 700 
+$Comp
+L CONN_01X03 P?
+U 1 1 5809465E
+P 1300 800
+F 0 "P?" H 1300 1000 50  0000 C CNN
+F 1 "CONN_01X03" V 1400 800 50  0000 C CNN
+F 2 "" H 1300 800 50  0000 C CNN
+F 3 "" H 1300 800 50  0000 C CNN
+	1    1300 800 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
