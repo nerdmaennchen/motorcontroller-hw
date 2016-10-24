@@ -204,12 +204,12 @@ F 3 "" H 1450 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1150 2550 500  300 
+S 700  4950 500  300 
 U 578E3EDC
 F0 "OSC" 60
 F1 "OSC.sch" 60
-F2 "OSC_IN" I R 1650 2650 60 
-F3 "OSC_OUT" I R 1650 2750 60 
+F2 "OSC_IN" I R 1200 5050 60 
+F3 "OSC_OUT" I R 1200 5150 60 
 $EndSheet
 $Comp
 L GND #PWR07
@@ -242,9 +242,9 @@ F2 "USB_ID" B R 1200 6050 60
 F3 "USB_DP" B R 1200 6150 60 
 F4 "USB_DM" B R 1200 6250 60 
 $EndSheet
-Text Label 1250 6150 0    60   ~ 0
+Text Label 1300 6150 0    60   ~ 0
 USB_DP
-Text Label 1250 6250 0    60   ~ 0
+Text Label 1300 6250 0    60   ~ 0
 USB_DM
 NoConn ~ 1200 6050
 Text Label 8100 4450 0    60   ~ 0
@@ -260,11 +260,11 @@ F2 "SWDCLK" I R 1200 6600 60
 F3 "SWDIO" I R 1200 6700 60 
 F4 "NRST" I R 1200 6800 60 
 $EndSheet
-Text Label 1250 6600 0    60   ~ 0
+Text Label 1300 6600 0    60   ~ 0
 SWDCLK
-Text Label 1250 6700 0    60   ~ 0
+Text Label 1300 6700 0    60   ~ 0
 SWDIO
-Text Label 1250 6800 0    60   ~ 0
+Text Label 1300 6800 0    60   ~ 0
 NRST
 Text Label 1050 1850 2    60   ~ 0
 NRST
@@ -301,7 +301,7 @@ F 3 "" H 9000 4700 50  0000 C CNN
 	1    9000 4700
 	1    0    0    -1  
 $EndComp
-Text Label 1700 3650 2    60   ~ 0
+Text Label 1700 3950 2    60   ~ 0
 COM_RX_TX_1
 $Sheet
 S 9550 1300 550  450 
@@ -318,11 +318,9 @@ F1 "CUR_SENSE_4.sch" 60
 F2 "IN_1" I L 9550 650 60 
 F3 "IN_2" I L 9550 750 60 
 F4 "IN_3" I L 9550 900 60 
-F5 "IN_4" I L 9550 1000 60 
-F6 "OUT_1" O R 10550 650 60 
-F7 "OUT_2" O R 10550 750 60 
-F8 "OUT_3" O R 10550 900 60 
-F9 "OUT_4" O R 10550 1000 60 
+F5 "OUT_1" O R 10550 650 60 
+F6 "OUT_2" O R 10550 750 60 
+F7 "OUT_3" O R 10550 900 60 
 $EndSheet
 Text Label 9500 900  2    60   ~ 0
 DRV_OUT_1
@@ -343,7 +341,7 @@ F0 "CON_LED" 60
 F1 "CON_LED.sch" 60
 F2 "LED_DATA" I R 2200 6700 60 
 $EndSheet
-Text Label 2250 6700 0    60   ~ 0
+Text Label 2300 6700 0    60   ~ 0
 LED_MOSI
 $Sheet
 S 700  7100 500  400 
@@ -354,32 +352,23 @@ F2 "A" I R 1200 7450 60
 F3 "B" I R 1200 7350 60 
 F4 "C" I R 1200 7250 60 
 $EndSheet
-Text Label 1250 7450 0    60   ~ 0
+Text Label 1300 7450 0    60   ~ 0
 DRV_OUT_3
-Text Label 1250 7350 0    60   ~ 0
+Text Label 1300 7350 0    60   ~ 0
 DRV_OUT_2
-Text Label 1250 7250 0    60   ~ 0
+Text Label 1300 7250 0    60   ~ 0
 DRV_OUT_1
-Text Label 1700 3850 2    60   ~ 0
+Text Label 8100 3250 0    60   ~ 0
 HALL_U
-Text Label 1700 3950 2    60   ~ 0
+Text Label 8100 3350 0    60   ~ 0
 HALL_V
-Text Label 1700 4050 2    60   ~ 0
+Text Label 8100 3450 0    60   ~ 0
 HALL_W
-$Sheet
-S 700  5500 500  300 
-U 57ADA9A0
-F0 "HALL" 60
-F1 "HALL.sch" 60
-F2 "HALL_U" O R 1200 5550 60 
-F3 "HALL_V" O R 1200 5650 60 
-F4 "HALL_W" O R 1200 5750 60 
-$EndSheet
-Text Label 1250 5550 0    60   ~ 0
+Text Label 1300 5450 0    60   ~ 0
 HALL_U
-Text Label 1250 5650 0    60   ~ 0
+Text Label 1300 5550 0    60   ~ 0
 HALL_V
-Text Label 1250 5750 0    60   ~ 0
+Text Label 1300 5650 0    60   ~ 0
 HALL_W
 $Sheet
 S 5800 700  500  150 
@@ -389,9 +378,9 @@ F1 "Holes.sch" 60
 $EndSheet
 Text Label 10200 1500 0    60   ~ 0
 COM_RX_TX_1
-Text Label 8100 3450 0    60   ~ 0
+Text Label 1700 4150 2    60   ~ 0
 PWM_1
-Text Label 8100 3550 0    60   ~ 0
+Text Label 1700 4250 2    60   ~ 0
 PWM_2
 $Sheet
 S 1700 6000 500  250 
@@ -401,9 +390,9 @@ F1 "2CON.sch" 60
 F2 "SIG_1" I R 2200 6200 60 
 F3 "SIG_2" I R 2200 6100 60 
 $EndSheet
-Text Label 2250 6100 0    60   ~ 0
+Text Label 2300 6100 0    60   ~ 0
 PWM_1
-Text Label 2250 6200 0    60   ~ 0
+Text Label 2300 6200 0    60   ~ 0
 PWM_2
 $Comp
 L STM32F401CBUx U?
@@ -472,10 +461,98 @@ Text Label 1700 4550 2    60   ~ 0
 DRV_L_A
 Text Label 1700 4650 2    60   ~ 0
 DRV_L_B
-Text Label 1700 4750 2    60   ~ 0
+Text Label 1700 3450 2    60   ~ 0
 DRV_L_C
+Text Label 8100 4550 0    60   ~ 0
+SWDIO
+Text Label 8100 4650 0    60   ~ 0
+SWDCLK
+$Comp
+L GND #PWR?
+U 1 1 580BEB44
+P 800 2850
+F 0 "#PWR?" H 800 2600 50  0001 C CNN
+F 1 "GND" H 800 2700 50  0000 C CNN
+F 2 "" H 800 2850 50  0000 C CNN
+F 3 "" H 800 2850 50  0000 C CNN
+	1    800  2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 580C0FAE
+P 6500 6900
+F 0 "#PWR?" H 6500 6750 50  0001 C CNN
+F 1 "VCC" H 6500 7050 50  0000 C CNN
+F 2 "" H 6500 6900 50  0000 C CNN
+F 3 "" H 6500 6900 50  0000 C CNN
+	1    6500 6900
+	1    0    0    -1  
+$EndComp
+Text Label 5650 7250 0    60   ~ 0
+CUR_SENSE_1
+Text Label 5650 7350 0    60   ~ 0
+CUR_SENSE_2
+Text Label 5650 7050 0    60   ~ 0
+DRV_DC_CAL
+Text Label 5650 6750 0    60   ~ 0
+SPI_MOSI
+Text Label 5650 6850 0    60   ~ 0
+SPI_MISO
+Text Label 5650 6950 0    60   ~ 0
+SPI_SCK
+Text Label 5650 6650 0    60   ~ 0
+DRV_SPI_NCS
+Text Label 5650 6350 0    60   ~ 0
+DRV_NOCTW
+Text Label 5650 6450 0    60   ~ 0
+DRV_NFAULT
+Text Label 1700 3650 2    60   ~ 0
+SPI_SCK
+Text Label 1700 3750 2    60   ~ 0
+SPI_MISO
+Text Label 1700 3850 2    60   ~ 0
+SPI_MOSI
+Text Label 1700 3150 2    60   ~ 0
+DRV_SPI_NCS
+Text Label 1700 2950 2    60   ~ 0
+DRV_NOCTW
+Text Label 1700 3050 2    60   ~ 0
+DRV_NFAULT
+Text Label 1700 3350 2    60   ~ 0
+CUR_SENSE_1
+Text Label 8100 3650 0    60   ~ 0
+CUR_SENSE_2
+$Comp
+L JUMPER JP?
+U 1 1 580CCA9A
+P 1450 1400
+F 0 "JP?" H 1450 1550 50  0000 C CNN
+F 1 "OPEN" H 1450 1320 50  0000 C CNN
+F 2 "" H 1450 1400 50  0000 C CNN
+F 3 "" H 1450 1400 50  0000 C CNN
+	1    1450 1400
+	0    1    1    0   
+$EndComp
+Text Label 8100 3750 0    60   ~ 0
+SENSE_V_1
+Text Label 8100 3850 0    60   ~ 0
+SENSE_V_2
+Text Label 8100 3950 0    60   ~ 0
+SENSE_V_3
+$Comp
+L VCC #PWR?
+U 1 1 580D5C32
+P 1350 2200
+F 0 "#PWR?" H 1350 2050 50  0001 C CNN
+F 1 "VCC" H 1350 2350 50  0000 C CNN
+F 2 "" H 1350 2200 50  0000 C CNN
+F 3 "" H 1350 2200 50  0000 C CNN
+	1    1350 2200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1800 4750 1700 4750
+	1800 3450 1700 3450
 Wire Wire Line
 	1700 4650 1800 4650
 Wire Wire Line
@@ -526,29 +603,29 @@ Wire Wire Line
 Wire Wire Line
 	4900 1350 4900 1450
 Wire Wire Line
-	2200 6200 2250 6200
+	2200 6200 2300 6200
 Wire Wire Line
-	2250 6100 2200 6100
+	2300 6100 2200 6100
 Wire Wire Line
-	1800 3950 1700 3950
+	8000 3350 8100 3350
 Wire Wire Line
-	1700 3850 1800 3850
+	8100 3250 8000 3250
 Wire Wire Line
 	10100 1500 10200 1500
 Wire Wire Line
-	1250 5550 1200 5550
+	1300 5450 1200 5450
 Wire Wire Line
-	1200 5650 1250 5650
+	1200 5550 1300 5550
 Wire Wire Line
-	1250 5750 1200 5750
+	1300 5650 1200 5650
 Wire Wire Line
-	1200 7450 1250 7450
+	1200 7450 1300 7450
 Wire Wire Line
-	1250 7350 1200 7350
+	1300 7350 1200 7350
 Wire Wire Line
-	1200 7250 1250 7250
+	1200 7250 1300 7250
 Wire Wire Line
-	2250 6700 2200 6700
+	2300 6700 2200 6700
 Wire Wire Line
 	8000 4750 8400 4750
 Wire Wire Line
@@ -558,37 +635,33 @@ Wire Wire Line
 Wire Wire Line
 	10600 900  10550 900 
 Wire Wire Line
-	10600 1000 10550 1000
-Wire Wire Line
-	9500 1000 9550 1000
-Wire Wire Line
 	9500 900  9550 900 
 Wire Wire Line
 	9500 750  9550 750 
 Wire Wire Line
 	9500 650  9550 650 
 Wire Wire Line
-	1700 3750 1700 3650
+	1700 4050 1700 3950
 Wire Wire Line
-	1800 3750 1700 3750
+	1800 4050 1700 4050
 Wire Wire Line
 	9000 4750 8950 4750
 Wire Wire Line
 	9000 4700 9000 4750
 Wire Wire Line
-	1700 3650 1800 3650
+	1700 3950 1800 3950
 Wire Wire Line
 	8750 4750 8600 4750
 Wire Wire Line
-	1250 6600 1200 6600
+	1300 6600 1200 6600
 Wire Wire Line
-	1200 6700 1250 6700
+	1200 6700 1300 6700
 Wire Wire Line
-	1250 6800 1200 6800
+	1300 6800 1200 6800
 Wire Wire Line
-	1200 6150 1250 6150
+	1200 6150 1300 6150
 Wire Wire Line
-	1250 6250 1200 6250
+	1300 6250 1200 6250
 Connection ~ 4900 5300
 Wire Wire Line
 	5100 5300 5100 5150
@@ -599,9 +672,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 5150 4900 5350
 Wire Wire Line
-	1650 2750 1800 2750
+	1700 2750 1800 2750
 Wire Wire Line
-	1650 2650 1800 2650
+	1700 2650 1800 2650
 Connection ~ 3000 800 
 Wire Wire Line
 	3000 800  3000 750 
@@ -654,15 +727,11 @@ Wire Wire Line
 Wire Wire Line
 	1050 1850 1800 1850
 Wire Wire Line
-	1700 4050 1800 4050
+	8100 3450 8000 3450
 Wire Wire Line
-	8100 3550 8000 3550
+	1700 4250 1800 4250
 Wire Wire Line
-	8000 3450 8100 3450
-Text Label 8100 4550 0    60   ~ 0
-SWDIO
-Text Label 8100 4650 0    60   ~ 0
-SWDCLK
+	1800 4150 1700 4150
 Wire Wire Line
 	8100 4650 8000 4650
 Wire Wire Line
@@ -671,144 +740,58 @@ Wire Wire Line
 	8100 4350 8000 4350
 Wire Wire Line
 	8000 4450 8100 4450
-$Comp
-L GND #PWR?
-U 1 1 580BEB44
-P 800 2850
-F 0 "#PWR?" H 800 2600 50  0001 C CNN
-F 1 "GND" H 800 2700 50  0000 C CNN
-F 2 "" H 800 2850 50  0000 C CNN
-F 3 "" H 800 2850 50  0000 C CNN
-	1    800  2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	800  2850 800  2800
 Wire Wire Line
 	800  2500 800  2450
 Wire Wire Line
 	800  2450 1800 2450
-$Comp
-L VCC #PWR?
-U 1 1 580C0FAE
-P 6500 6900
-F 0 "#PWR?" H 6500 6750 50  0001 C CNN
-F 1 "VCC" H 6500 7050 50  0000 C CNN
-F 2 "" H 6500 6900 50  0000 C CNN
-F 3 "" H 6500 6900 50  0000 C CNN
-	1    6500 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 6900 6500 7150
 Wire Wire Line
 	6500 7150 5550 7150
-Text Label 5650 7250 0    60   ~ 0
-CUR_SENSE_1
-Text Label 5650 7350 0    60   ~ 0
-CUR_SENSE_2
 Wire Wire Line
 	5650 7350 5550 7350
 Wire Wire Line
 	5550 7250 5650 7250
-Text Label 5650 7050 0    60   ~ 0
-DRV_DC_CAL
 Wire Wire Line
 	5650 7050 5550 7050
-Text Label 5650 6750 0    60   ~ 0
-SPI_MOSI
-Text Label 5650 6850 0    60   ~ 0
-SPI_MISO
-Text Label 5650 6950 0    60   ~ 0
-SPI_SCK
 Wire Wire Line
 	5650 6950 5550 6950
 Wire Wire Line
 	5550 6850 5650 6850
 Wire Wire Line
 	5650 6750 5550 6750
-Text Label 5650 6650 0    60   ~ 0
-DRV_SPI_NCS
 Wire Wire Line
 	5650 6650 5550 6650
-Text Label 5650 6350 0    60   ~ 0
-DRV_NOCTW
-Text Label 5650 6450 0    60   ~ 0
-DRV_NFAULT
 Wire Wire Line
 	5650 6450 5550 6450
 Wire Wire Line
 	5550 6350 5650 6350
-Text Label 8100 3750 0    60   ~ 0
-SPI_SCK
 Wire Wire Line
-	8100 3750 8000 3750
-Text Label 8100 3850 0    60   ~ 0
-SPI_MISO
-Text Label 8100 3950 0    60   ~ 0
-SPI_MOSI
+	1700 3650 1800 3650
+Wire Wire Line
+	1700 3850 1800 3850
+Wire Wire Line
+	1800 3750 1700 3750
 Wire Wire Line
 	8100 3950 8000 3950
 Wire Wire Line
-	8000 3850 8100 3850
-Text Label 1700 4350 2    60   ~ 0
-DRV_SPI_NCS
+	8100 3850 8000 3850
 Wire Wire Line
-	8100 3650 8000 3650
-Text Label 1700 4150 2    60   ~ 0
-DRV_NOCTW
-Text Label 1700 4250 2    60   ~ 0
-DRV_NFAULT
-Wire Wire Line
-	8100 3350 8000 3350
-Wire Wire Line
-	8000 3250 8100 3250
-Text Label 1700 3350 2    60   ~ 0
-CUR_SENSE_1
+	8000 3750 8100 3750
 Wire Wire Line
 	1700 3350 1800 3350
-Text Label 1700 3450 2    60   ~ 0
-CUR_SENSE_2
 Wire Wire Line
-	1700 3450 1800 3450
+	8100 3650 8000 3650
 Wire Wire Line
 	1450 2050 1800 2050
-$Comp
-L JUMPER JP?
-U 1 1 580CCA9A
-P 1450 1400
-F 0 "JP?" H 1450 1550 50  0000 C CNN
-F 1 "OPEN" H 1450 1320 50  0000 C CNN
-F 2 "" H 1450 1400 50  0000 C CNN
-F 3 "" H 1450 1400 50  0000 C CNN
-	1    1450 1400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1700 4150 1800 4150
+	1700 2950 1800 2950
 Wire Wire Line
-	1700 4250 1800 4250
+	1700 3050 1800 3050
 Wire Wire Line
-	1700 4350 1800 4350
-NoConn ~ 10600 1000
-NoConn ~ 9500 1000
-Text Label 8100 3250 0    60   ~ 0
-SENSE_V_1
-Text Label 8100 3350 0    60   ~ 0
-SENSE_V_2
-Text Label 8100 3650 0    60   ~ 0
-SENSE_V_3
-$Comp
-L VCC #PWR?
-U 1 1 580D5C32
-P 1350 2200
-F 0 "#PWR?" H 1350 2050 50  0001 C CNN
-F 1 "VCC" H 1350 2350 50  0000 C CNN
-F 2 "" H 1350 2200 50  0000 C CNN
-F 3 "" H 1350 2200 50  0000 C CNN
-	1    1350 2200
-	1    0    0    -1  
-$EndComp
+	1700 3150 1800 3150
 Wire Wire Line
 	1350 2200 1350 2350
 Wire Wire Line
@@ -816,4 +799,38 @@ Wire Wire Line
 Wire Wire Line
 	1350 2350 1800 2350
 Connection ~ 1350 2250
+$Sheet
+S 700  5400 500  400 
+U 580FABC4
+F0 "HALL" 60
+F1 "HALL.sch" 60
+F2 "HALL_U" O R 1200 5450 60 
+F3 "HALL_V" O R 1200 5550 60 
+F4 "HALL_W" O R 1200 5650 60 
+F5 "HALL_PWM" I R 1200 5750 60 
+$EndSheet
+Text Label 8100 3550 0    60   ~ 0
+HALL_PWM
+Wire Wire Line
+	8100 3550 8000 3550
+Text Label 1300 5750 0    60   ~ 0
+HALL_PWM
+Wire Wire Line
+	1300 5750 1200 5750
+Text Label 1300 5050 0    60   ~ 0
+OSC_IN
+Wire Wire Line
+	1300 5050 1200 5050
+Text Label 1300 5150 0    60   ~ 0
+OSC_OUT
+Wire Wire Line
+	1300 5150 1200 5150
+Text Label 1700 2650 2    60   ~ 0
+OSC_IN
+Text Label 1700 2750 2    60   ~ 0
+OSC_OUT
+Text Label 1700 4750 2    60   ~ 0
+LED_MOSI
+Wire Wire Line
+	1700 4750 1800 4750
 $EndSCHEMATC
