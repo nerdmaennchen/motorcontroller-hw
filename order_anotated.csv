@@ -1,41 +1,87 @@
 Qty,Value,Footprint,
+
 12,	2.2uF, 	Capacitors_SMD:C_0603
-2,	NA/100nF, 	Capacitors_SMD:C_0603
-2,	22pF, 	Capacitors_SMD:C_0603
-4,	100nF, 	Capacitors_SMD:C_0603
-2,	1nF, 	Capacitors_SMD:C_0603
+12, 1276-6592-1-ND
+
+3,	10nF, 	Capacitors_SMD:C_0603
+3, 1276-1921-1-ND
+
 1,	22nF, 	Capacitors_SMD:C_0603
-1,	10uF, 	Capacitors_ThroughHole:C_Radial_D5_L11_P2
+1, 490-3169-1-ND
+
+3,	100nF, 	Capacitors_SMD:C_0603
+3, 1276-1258-1-ND
+
+1,	4.7uF, 	Capacitors_SMD:C_0805
+
+2,	22pF, 	Capacitors_SMD:C_0603
+2, 1276-2227-1-ND
+
 1,	status, 	LEDs:LED_0805
-1,	D_Schottky, 	Diodes_SMD:SOD-323
-1,	D_Small, 	Diodes_SMD:SOD-323
+1, 160-1434-1-ND
+
+2,	D_Schottky, 	Diodes_SMD:SOD-323
+2, NSR0530HT1GOSCT-ND
+
 4,	3.3V, 	Diodes_SMD:SOD-323
-1,	OPEN, 	Resistors_SMD:R_0402
+4, MM3Z3V3T1GOSCT-ND
+
 1,	USB_OTG, 	Connect:USB_Micro-B
-1,	CON_SWD, 	Socket_Strips:Socket_Strip_Straight_1x05
-1,	CON_PWR_BRD, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol
-1,	CON_LED, 	Pin_Headers:Pin_Header_Straight_1x03
+1, 609-4618-1-ND
+
 1,	CONN_01X03, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_3pol
-4,	MOUNTING, 	Connect:1pin
-2,	CONN_01X03, 	Pin_Headers:Pin_Header_Straight_1x03
+1, ED10562-ND
+
+1,	CON_PWR_BRD, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol
+1, ED10563-ND
+
 1,	CON_HALL, 	Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_5pol
+1, ED10564-ND
+
 6,	Q_NMOS_DGS, 	BLDC:SOT1210
+6, 568-13008-1-ND
+
 1,	2N7002, 	TO_SOT_Packages_SMD:SOT-23
+1, 2N7002ECT-ND
+
 1,	330, 	Resistors_SMD:R_0603
+1, 311-330GRCT-ND
+
 4,	10kR, 	Resistors_SMD:R_0603
-2,	.01, 	Resistors_SMD:R_1210
+4, 311-10KGRCT-ND
+
 1,	1R, 	Resistors_SMD:R_0603
+1, 1276-4991-1-ND
+
 6,	10R, 	Resistors_SMD:R_0603
-1,	NA/50kR, 	Resistors_SMD:R_0603
+6, 311-10KGRCT-ND
+
 1,	0R/50kR, 	Resistors_SMD:R_0603
-2,	NA/10kR, 	Resistors_SMD:R_0603
-1,	20k, 	Resistors_SMD:R_Array_Concave_4x0603
+1,	NA/50kR, 	Resistors_SMD:R_0603
+1, 311-47KGRCT-ND
+
+2,	.01, 	Resistors_SMD:R_1210
+2, 1276-6160-1-ND
+
+1,	33k, 	Resistors_SMD:R_Array_Concave_4x0603
+1, 742C083333JPCT-ND
+
 1,	1k, 	Resistors_SMD:R_Array_Concave_4x0603
+1, 742C083102JPCT-ND
+
 1,	10k, 	Resistors_SMD:R_Array_Concave_4x0603
+1, 742C083103JPCT-ND
+
 1,	STM32F401CBUx, 	Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm
+
 1,	LD1117S33TR, 	TO_SOT_Packages_SMD:SOT-223
-1,	DRV8313, 	BLDC:SOIC-48
+1, 497-1242-1-ND
+
+1,	DRV8303, 	BLDC:SOIC-48
+1, 296-40070-1-ND
+
 1,	Crystal, 	Crystals:Crystal_SMD_5032_2Pads
+1, 535-10630-1-ND
 
 
 Title,
