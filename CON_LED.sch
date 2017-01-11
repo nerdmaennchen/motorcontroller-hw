@@ -71,7 +71,7 @@ F 1 "CON_LED" V 1600 950 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1500 950 50  0001 C CNN
 F 3 "" H 1500 950 50  0000 C CNN
 	1    1500 950 
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1200 950  1300 950 
