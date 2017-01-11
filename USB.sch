@@ -50,7 +50,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG P4
+L USB_OTG-RESCUE-bldc-controller P4
 U 1 1 577D256E
 P 2500 6000
 F 0 "P4" H 2825 5875 50  0000 C CNN
