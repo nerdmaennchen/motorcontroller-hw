@@ -50,9 +50,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG P4
+L USB_OTG-RESCUE-bldc-controller P4
 U 1 1 577D256E
 P 2500 6000
+AR Path="/577D256E" Ref="P4"  Part="1" 
+AR Path="/578E9D42/577D256E" Ref="P4"  Part="1" 
 F 0 "P4" H 2825 5875 50  0000 C CNN
 F 1 "USB_OTG" H 2500 6200 50  0000 C CNN
 F 2 "Connect:USB_Micro-B" V 2450 5900 50  0001 C CNN
