@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:bldc-controller-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Power_Management
-LIBS:st-microelectronics
-LIBS:stm32
-LIBS:w_analog
-LIBS:mpu6000
+EESchema Schematic File Version 4
 LIBS:bldc-controller-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VCC #PWR01
+L bldc-controller-rescue:VCC #PWR01
 U 1 1 578D5F23
 P 4900 1350
 F 0 "#PWR01" H 4900 1200 50  0001 C CNN
@@ -61,73 +26,73 @@ F 3 "" H 4900 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L bldc-controller-rescue:C C4
 U 1 1 578E348A
 P 2700 1000
 F 0 "C4" H 2725 1100 50  0000 L CNN
 F 1 "2.2uF" H 2725 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2738 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 850 50  0001 C CNN
 F 3 "" H 2700 1000 50  0000 C CNN
 	1    2700 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L bldc-controller-rescue:C C5
 U 1 1 578E3698
 P 2900 1000
 F 0 "C5" H 2925 1100 50  0000 L CNN
 F 1 "2.2uF" H 2925 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2938 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2938 850 50  0001 C CNN
 F 3 "" H 2900 1000 50  0000 C CNN
 	1    2900 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L bldc-controller-rescue:C C6
 U 1 1 578E36C2
 P 3100 1000
 F 0 "C6" H 3125 1100 50  0000 L CNN
 F 1 "2.2uF" H 3125 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3138 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 850 50  0001 C CNN
 F 3 "" H 3100 1000 50  0000 C CNN
 	1    3100 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L bldc-controller-rescue:C C7
 U 1 1 578E36EB
 P 3300 1000
 F 0 "C7" H 3325 1100 50  0000 L CNN
 F 1 "2.2uF" H 3325 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3338 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3338 850 50  0001 C CNN
 F 3 "" H 3300 1000 50  0000 C CNN
 	1    3300 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L bldc-controller-rescue:C C10
 U 1 1 578E3717
 P 3500 1000
 F 0 "C10" H 3525 1100 50  0000 L CNN
 F 1 "2.2uF" H 3525 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3538 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 850 50  0001 C CNN
 F 3 "" H 3500 1000 50  0000 C CNN
 	1    3500 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L bldc-controller-rescue:C C3
 U 1 1 578E3746
 P 2500 1000
 F 0 "C3" H 2525 1100 50  0000 L CNN
 F 1 "2.2uF" H 2525 900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2538 850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 850 50  0001 C CNN
 F 3 "" H 2500 1000 50  0000 C CNN
 	1    2500 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L bldc-controller-rescue:GND #PWR02
 U 1 1 578E393F
 P 3000 1250
 F 0 "#PWR02" H 3000 1000 50  0001 C CNN
@@ -138,7 +103,7 @@ F 3 "" H 3000 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR03
+L bldc-controller-rescue:VCC #PWR03
 U 1 1 578E39A1
 P 3000 750
 F 0 "#PWR03" H 3000 600 50  0001 C CNN
@@ -149,7 +114,7 @@ F 3 "" H 3000 750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR04
+L bldc-controller-rescue:VCC #PWR04
 U 1 1 578E3BA4
 P 1450 950
 F 0 "#PWR04" H 1450 800 50  0001 C CNN
@@ -168,7 +133,7 @@ F2 "OSC_IN" I R 1200 5050 60
 F3 "OSC_OUT" I R 1200 5150 60 
 $EndSheet
 $Comp
-L GND #PWR05
+L bldc-controller-rescue:GND #PWR05
 U 1 1 578E83F1
 P 4900 5350
 F 0 "#PWR05" H 4900 5100 50  0001 C CNN
@@ -179,12 +144,12 @@ F 3 "" H 4900 5350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L bldc-controller-rescue:C C12
 U 1 1 578E86F2
 P 800 2650
 F 0 "C12" H 825 2750 50  0000 L CNN
 F 1 "2.2uF" H 825 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 838 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 838 2500 50  0001 C CNN
 F 3 "" H 800 2650 50  0000 C CNN
 	1    800  2650
 	1    0    0    -1  
@@ -225,29 +190,29 @@ NRST
 Text Label 700  1850 2    60   ~ 0
 NRST
 $Comp
-L R_Small R5
+L bldc-controller-rescue:R_Small R5
 U 1 1 578F416D
 P 8500 4750
 F 0 "R5" H 8530 4770 50  0000 L CNN
 F 1 "330" H 8530 4710 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 8500 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8500 4750 50  0001 C CNN
 F 3 "" H 8500 4750 50  0000 C CNN
 	1    8500 4750
 	0    1    1    0   
 $EndComp
 $Comp
-L Led_Small D3
+L bldc-controller-rescue:Led_Small D3
 U 1 1 578F4224
 P 8850 4750
 F 0 "D3" H 8800 4875 50  0000 L CNN
 F 1 "status" V 8675 4650 50  0000 L CNN
-F 2 "LEDs:LED_0805" V 8850 4750 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 8850 4750 50  0001 C CNN
 F 3 "" V 8850 4750 50  0000 C CNN
 	1    8850 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR06
+L bldc-controller-rescue:VCC #PWR06
 U 1 1 578F4438
 P 9000 4700
 F 0 "#PWR06" H 9000 4550 50  0001 C CNN
@@ -353,12 +318,12 @@ PWM_1
 Text Label 2300 6200 0    60   ~ 0
 PWM_2
 $Comp
-L STM32F401CBUx U1
+L bldc-controller-rescue:STM32F401CBUx U1
 U 1 1 5807ABBD
 P 4900 3350
 F 0 "U1" H 1900 5175 50  0000 L BNN
 F 1 "STM32F401CBUx" H 7900 5175 50  0000 R BNN
-F 2 "Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm" H 7900 5125 50  0000 R TNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 7900 5125 50  0000 R TNN
 F 3 "" H 4900 3350 50  0000 C CNN
 	1    4900 3350
 	1    0    0    -1  
@@ -418,14 +383,12 @@ Text Label 1700 4550 2    60   ~ 0
 DRV_L_A
 Text Label 1700 4650 2    60   ~ 0
 DRV_L_B
-Text Label 1700 3450 2    60   ~ 0
-DRV_L_C
 Text Label 8100 4550 0    60   ~ 0
 SWDIO
 Text Label 8100 4650 0    60   ~ 0
 SWDCLK
 $Comp
-L GND #PWR07
+L bldc-controller-rescue:GND #PWR07
 U 1 1 580BEB44
 P 800 2850
 F 0 "#PWR07" H 800 2600 50  0001 C CNN
@@ -436,7 +399,7 @@ F 3 "" H 800 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR08
+L bldc-controller-rescue:VCC #PWR08
 U 1 1 580C0FAE
 P 6500 6900
 F 0 "#PWR08" H 6500 6750 50  0001 C CNN
@@ -478,17 +441,6 @@ Text Label 1700 3350 2    60   ~ 0
 CUR_SENSE_1
 Text Label 8100 3650 0    60   ~ 0
 V_PP_SENSE
-$Comp
-L JUMPER JP1
-U 1 1 580CCA9A
-P 1450 1400
-F 0 "JP1" H 1450 1550 50  0000 C CNN
-F 1 "OPEN" H 1450 1320 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" H 1450 1400 50  0001 C CNN
-F 3 "" H 1450 1400 50  0000 C CNN
-	1    1450 1400
-	0    1    1    0   
-$EndComp
 Text Label 8100 3950 0    60   ~ 0
 SENSE_V_1
 Text Label 8100 3850 0    60   ~ 0
@@ -496,7 +448,7 @@ SENSE_V_2
 Text Label 8100 3750 0    60   ~ 0
 SENSE_V_3
 $Comp
-L VCC #PWR09
+L bldc-controller-rescue:VCC #PWR09
 U 1 1 580D5C32
 P 1350 2200
 F 0 "#PWR09" H 1350 2050 50  0001 C CNN
@@ -554,9 +506,9 @@ Connection ~ 4900 1400
 Wire Wire Line
 	4800 1400 4800 1450
 Wire Wire Line
-	4800 1400 5000 1400
+	4800 1400 4900 1400
 Wire Wire Line
-	4900 1350 4900 1450
+	4900 1350 4900 1400
 Wire Wire Line
 	2200 6200 2300 6200
 Wire Wire Line
@@ -619,9 +571,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 5150 4700 5300
 Wire Wire Line
-	4700 5300 5100 5300
+	4700 5300 4800 5300
 Wire Wire Line
-	4900 5150 4900 5350
+	4900 5150 4900 5300
 Wire Wire Line
 	1700 2750 1800 2750
 Wire Wire Line
@@ -647,7 +599,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 1200 3500 1150
 Wire Wire Line
-	2500 1200 3500 1200
+	2500 1200 2700 1200
 Connection ~ 2700 800 
 Wire Wire Line
 	2700 850  2700 800 
@@ -663,11 +615,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 800  3500 850 
 Wire Wire Line
-	2500 800  3500 800 
-Wire Wire Line
-	1450 1700 1450 2050
-Wire Wire Line
-	1450 950  1450 1100
+	2500 800  2700 800 
 Wire Wire Line
 	700  1850 1800 1850
 Wire Wire Line
@@ -717,8 +665,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 3750 1700 3750
 Wire Wire Line
-	8100 3950 8000 3950
-Wire Wire Line
 	8100 3850 8000 3850
 Wire Wire Line
 	8000 3750 8100 3750
@@ -735,7 +681,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 3150 1800 3150
 Wire Wire Line
-	1350 2200 1350 2350
+	1350 2200 1350 2250
 Wire Wire Line
 	1350 2250 1800 2250
 Wire Wire Line
@@ -771,17 +717,15 @@ Text Label 1700 2650 2    60   ~ 0
 OSC_IN
 Text Label 1700 2750 2    60   ~ 0
 OSC_OUT
-Text Label 1700 4750 2    60   ~ 0
-LED_MOSI
 Wire Wire Line
 	1700 4750 1800 4750
 $Comp
-L R_Small R3
+L bldc-controller-rescue:R_Small R3
 U 1 1 578E3167
 P 700 1650
 F 0 "R3" H 730 1670 50  0000 L CNN
 F 1 "10kR" H 730 1610 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 700 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 700 1650 50  0001 C CNN
 F 3 "" H 700 1650 50  0000 C CNN
 	1    700  1650
 	-1   0    0    1   
@@ -789,18 +733,18 @@ $EndComp
 Wire Wire Line
 	1000 2200 1000 2150
 $Comp
-L R_Small R1
+L bldc-controller-rescue:R_Small R1
 U 1 1 580F426E
 P 1000 2050
 F 0 "R1" H 1030 2070 50  0000 L CNN
 F 1 "10kR" H 1030 2010 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1000 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1000 2050 50  0001 C CNN
 F 3 "" H 1000 2050 50  0000 C CNN
 	1    1000 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L bldc-controller-rescue:GND #PWR010
 U 1 1 580F4274
 P 1000 2200
 F 0 "#PWR010" H 1000 1950 50  0001 C CNN
@@ -813,21 +757,21 @@ $EndComp
 Wire Wire Line
 	1000 1950 1000 1900
 Wire Wire Line
-	1000 1900 1450 1900
+	1000 1900 1200 1900
 Connection ~ 1450 1900
 $Comp
-L C_Small C1
+L bldc-controller-rescue:C_Small C1
 U 1 1 58126738
 P 1200 2050
 F 0 "C1" H 1210 2120 50  0000 L CNN
 F 1 "NA/100nF" H 1210 1970 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1200 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 2050 50  0001 C CNN
 F 3 "" H 1200 2050 50  0000 C CNN
 	1    1200 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L bldc-controller-rescue:GND #PWR011
 U 1 1 58126AD7
 P 1200 2200
 F 0 "#PWR011" H 1200 1950 50  0001 C CNN
@@ -858,7 +802,7 @@ DRV_DC_CAL
 Wire Wire Line
 	1700 4350 1800 4350
 $Comp
-L VCC #PWR012
+L bldc-controller-rescue:VCC #PWR012
 U 1 1 58138DD1
 P 700 1450
 F 0 "#PWR012" H 700 1300 50  0001 C CNN
@@ -877,7 +821,7 @@ V_PP_SENSE
 Wire Wire Line
 	10600 1000 10550 1000
 $Comp
-L VPP #PWR013
+L bldc-controller-rescue:VPP #PWR013
 U 1 1 5817D479
 P 8900 900
 F 0 "#PWR013" H 8900 750 50  0001 C CNN
@@ -891,4 +835,61 @@ Wire Wire Line
 	8900 900  8900 1000
 Wire Wire Line
 	8900 1000 9550 1000
+Wire Wire Line
+	4800 5300 4900 5300
+Wire Wire Line
+	5000 5300 5100 5300
+Wire Wire Line
+	4900 1400 5000 1400
+Wire Wire Line
+	4900 1400 4900 1450
+Wire Wire Line
+	4900 5300 4900 5350
+Wire Wire Line
+	4900 5300 5000 5300
+Wire Wire Line
+	3000 800  3100 800 
+Wire Wire Line
+	3000 1200 3100 1200
+Wire Wire Line
+	2700 1200 2900 1200
+Wire Wire Line
+	2900 1200 3000 1200
+Wire Wire Line
+	3100 1200 3300 1200
+Wire Wire Line
+	3300 1200 3500 1200
+Wire Wire Line
+	2700 800  2900 800 
+Wire Wire Line
+	2900 800  3000 800 
+Wire Wire Line
+	3100 800  3300 800 
+Wire Wire Line
+	3300 800  3500 800 
+Wire Wire Line
+	1350 2250 1350 2350
+Wire Wire Line
+	1450 1900 1450 2050
+Wire Wire Line
+	1200 1900 1450 1900
+$Comp
+L bldc-controller-rescue:R_Small R15
+U 1 1 5D33DD65
+P 1450 1400
+F 0 "R15" H 1480 1420 50  0000 L CNN
+F 1 "10kR" H 1480 1360 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1450 1400 50  0001 C CNN
+F 3 "" H 1450 1400 50  0000 C CNN
+	1    1450 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 950  1450 1300
+Wire Wire Line
+	1450 1500 1450 1900
+Wire Wire Line
+	8000 3950 8100 3950
+Text Label 1700 4750 2    60   ~ 0
+DRV_L_C
 $EndSCHEMATC

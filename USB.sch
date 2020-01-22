@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:bldc-controller-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Power_Management
-LIBS:st-microelectronics
-LIBS:stm32
-LIBS:w_analog
-LIBS:mpu6000
+EESchema Schematic File Version 4
 LIBS:bldc-controller-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,20 +15,24 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG-RESCUE-bldc-controller P4
+L bldc-controller-rescue:USB_OTG-RESCUE-bldc-controller P4
 U 1 1 577D256E
 P 2500 6000
+AR Path="/577D256E" Ref="P4"  Part="1" 
+AR Path="/578E9D42/577D256E" Ref="P4"  Part="1" 
 F 0 "P4" H 2825 5875 50  0000 C CNN
 F 1 "USB_OTG" H 2500 6200 50  0000 C CNN
-F 2 "Connect:USB_Micro-B" V 2450 5900 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" V 2450 5900 50  0001 C CNN
 F 3 "" V 2450 5900 50  0000 C CNN
 	1    2500 6000
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR016
+L bldc-controller-rescue:+5V #PWR016
 U 1 1 577D25D3
 P 1900 5350
+AR Path="/577D25D3" Ref="#PWR016"  Part="1" 
+AR Path="/578E9D42/577D25D3" Ref="#PWR016"  Part="1" 
 F 0 "#PWR016" H 1900 5200 50  0001 C CNN
 F 1 "+5V" H 1900 5490 50  0000 C CNN
 F 2 "" H 1900 5350 50  0000 C CNN
@@ -78,7 +47,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 5800 2200 5800
 $Comp
-L GND #PWR017
+L bldc-controller-rescue:GND #PWR017
 U 1 1 577D264D
 P 1900 6350
 F 0 "#PWR017" H 1900 6100 50  0001 C CNN
@@ -105,18 +74,18 @@ Wire Wire Line
 Wire Wire Line
 	2200 6100 1900 6100
 $Comp
-L D_Schottky D4
+L bldc-controller-rescue:D_Schottky D4
 U 1 1 579031F5
 P 1900 5550
 F 0 "D4" H 1900 5650 50  0000 C CNN
 F 1 "D_Schottky" H 1900 5450 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-323" H 1900 5550 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 1900 5550 50  0001 C CNN
 F 3 "" H 1900 5550 50  0000 C CNN
 	1    1900 5550
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR018
+L bldc-controller-rescue:GND #PWR018
 U 1 1 57B47666
 P 2600 6450
 F 0 "#PWR018" H 2600 6200 50  0001 C CNN

@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:bldc-controller-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Power_Management
-LIBS:st-microelectronics
-LIBS:stm32
-LIBS:w_analog
-LIBS:mpu6000
+EESchema Schematic File Version 4
 LIBS:bldc-controller-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,18 +15,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X04 P7
+L bldc-controller-rescue:CONN_01X04 P7
 U 1 1 577ECDF6
 P 850 6700
 F 0 "P7" H 850 6950 50  0000 C CNN
 F 1 "CON_PWR_BRD" V 950 6700 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 850 6700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 850 6700 50  0001 C CNN
 F 3 "" H 850 6700 50  0000 C CNN
 	1    850  6700
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR021
+L bldc-controller-rescue:GND #PWR021
 U 1 1 577ED085
 P 1350 7050
 F 0 "#PWR021" H 1350 6800 50  0001 C CNN
@@ -72,29 +37,33 @@ F 3 "" H 1350 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C13
+L bldc-controller-rescue:C C13
 U 1 1 577ED254
 P 1800 6950
+AR Path="/577ED254" Ref="C13"  Part="1" 
+AR Path="/57903743/577ED254" Ref="C13"  Part="1" 
 F 0 "C13" H 1825 7050 50  0000 L CNN
 F 1 "2.2uF" H 1825 6850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1838 6800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1838 6800 50  0001 C CNN
 F 3 "" H 1800 6950 50  0000 C CNN
 	1    1800 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C14
+L bldc-controller-rescue:C C14
 U 1 1 577ED285
 P 2800 6950
+AR Path="/577ED285" Ref="C14"  Part="1" 
+AR Path="/57903743/577ED285" Ref="C14"  Part="1" 
 F 0 "C14" H 2825 7050 50  0000 L CNN
 F 1 "2.2uF" H 2825 6850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2838 6800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2838 6800 50  0001 C CNN
 F 3 "" H 2800 6950 50  0000 C CNN
 	1    2800 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L bldc-controller-rescue:GND #PWR022
 U 1 1 577ED346
 P 1800 7150
 F 0 "#PWR022" H 1800 6900 50  0001 C CNN
@@ -105,7 +74,7 @@ F 3 "" H 1800 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L bldc-controller-rescue:GND #PWR023
 U 1 1 577ED360
 P 2800 7150
 F 0 "#PWR023" H 2800 6900 50  0001 C CNN
@@ -116,7 +85,7 @@ F 3 "" H 2800 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L bldc-controller-rescue:GND #PWR024
 U 1 1 577ED37A
 P 2300 7150
 F 0 "#PWR024" H 2300 6900 50  0001 C CNN
@@ -127,9 +96,11 @@ F 3 "" H 2300 7150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR025
+L bldc-controller-rescue:VCC #PWR025
 U 1 1 577ED553
 P 2950 6550
+AR Path="/577ED553" Ref="#PWR025"  Part="1" 
+AR Path="/57903743/577ED553" Ref="#PWR025"  Part="1" 
 F 0 "#PWR025" H 2950 6400 50  0001 C CNN
 F 1 "VCC" H 2950 6700 50  0000 C CNN
 F 2 "" H 2950 6550 50  0000 C CNN
@@ -140,18 +111,18 @@ $EndComp
 Text HLabel 1100 6350 1    60   Input ~ 0
 RX_TX_PWR_BOARD
 $Comp
-L LD1117S33TR U7
+L bldc-controller-rescue:LD1117S33TR U7
 U 1 1 577F02C2
 P 2300 6800
 F 0 "U7" H 2300 7050 50  0000 C CNN
 F 1 "LD1117S33TR" H 2300 7000 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223" H 2300 6900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2300 6900 50  0000 C CNN
 F 3 "" H 2300 6800 50  0000 C CNN
 	1    2300 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG026
+L bldc-controller-rescue:PWR_FLAG #FLG026
 U 1 1 57B4ECE8
 P 1150 7050
 F 0 "#FLG026" H 1150 7145 50  0001 C CNN
@@ -162,7 +133,7 @@ F 3 "" H 1150 7050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VPP #PWR027
+L bldc-controller-rescue:VPP #PWR027
 U 1 1 57B36023
 P 1200 6400
 F 0 "#PWR027" H 1200 6250 50  0001 C CNN
@@ -175,7 +146,7 @@ $EndComp
 Wire Wire Line
 	1050 6850 1350 6850
 Wire Wire Line
-	1350 6850 1350 7050
+	1350 6850 1350 7000
 Wire Wire Line
 	2300 7050 2300 7150
 Wire Wire Line
@@ -183,9 +154,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 7100 2800 7150
 Wire Wire Line
-	2700 6750 2950 6750
+	2700 6750 2800 6750
 Wire Wire Line
-	1700 6750 1900 6750
+	1700 6750 1800 6750
 Connection ~ 1800 6750
 Wire Wire Line
 	2950 6750 2950 6550
@@ -202,11 +173,13 @@ Connection ~ 1350 7000
 Wire Wire Line
 	2800 6800 2800 6750
 Wire Wire Line
-	1200 6400 1200 6650
+	1200 6400 1200 6450
 $Comp
-L +5V #PWR028
+L bldc-controller-rescue:+5V #PWR028
 U 1 1 57B42FF7
 P 1800 6200
+AR Path="/57B42FF7" Ref="#PWR028"  Part="1" 
+AR Path="/57903743/57B42FF7" Ref="#PWR028"  Part="1" 
 F 0 "#PWR028" H 1800 6050 50  0001 C CNN
 F 1 "+5V" H 1800 6340 50  0000 C CNN
 F 2 "" H 1800 6200 50  0000 C CNN
@@ -215,7 +188,7 @@ F 3 "" H 1800 6200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG029
+L bldc-controller-rescue:PWR_FLAG #FLG029
 U 1 1 57B47DFF
 P 1950 5450
 F 0 "#FLG029" H 1950 5545 50  0001 C CNN
@@ -226,7 +199,7 @@ F 3 "" H 1950 5450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG030
+L bldc-controller-rescue:PWR_FLAG #FLG030
 U 1 1 57B47E75
 P 1950 5850
 F 0 "#FLG030" H 1950 5945 50  0001 C CNN
@@ -239,7 +212,7 @@ $EndComp
 Wire Wire Line
 	1450 5850 1450 6750
 $Comp
-L PWR_FLAG #FLG031
+L bldc-controller-rescue:PWR_FLAG #FLG031
 U 1 1 57B49678
 P 1950 6250
 F 0 "#FLG031" H 1950 6345 50  0001 C CNN
@@ -250,12 +223,12 @@ F 3 "" H 1950 6250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1800 6200 1800 6800
+	1800 6200 1800 6250
 Wire Wire Line
 	1950 6250 1800 6250
 Connection ~ 1800 6250
 Wire Wire Line
-	1450 5850 1950 5850
+	1450 5850 1800 5850
 Wire Wire Line
 	1200 6450 1350 6450
 Wire Wire Line
@@ -264,9 +237,11 @@ Wire Wire Line
 	1350 5450 1950 5450
 Connection ~ 1200 6450
 $Comp
-L +5VA #PWR032
+L bldc-controller-rescue:+5VA #PWR032
 U 1 1 57B577AF
 P 1800 5750
+AR Path="/57B577AF" Ref="#PWR032"  Part="1" 
+AR Path="/57903743/57B577AF" Ref="#PWR032"  Part="1" 
 F 0 "#PWR032" H 1800 5600 50  0001 C CNN
 F 1 "+5VA" H 1800 5890 50  0000 C CNN
 F 2 "" H 1800 5750 50  0000 C CNN
@@ -282,17 +257,33 @@ Text Notes 1500 5800 0    60   ~ 0
 Wire Wire Line
 	1200 6650 1050 6650
 Wire Wire Line
-	1050 6750 1500 6750
+	1050 6750 1450 6750
 $Comp
-L D_Small D5
+L bldc-controller-rescue:D_Small D5
 U 1 1 57BAD647
 P 1600 6750
 F 0 "D5" H 1550 6830 50  0000 L CNN
 F 1 "D_Small" H 1450 6670 50  0000 L CNN
-F 2 "Diodes_SMD:SOD-323" V 1600 6750 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" V 1600 6750 50  0001 C CNN
 F 3 "" V 1600 6750 50  0000 C CNN
 	1    1600 6750
 	-1   0    0    1   
 $EndComp
 Connection ~ 1450 6750
+Wire Wire Line
+	1800 6750 1900 6750
+Wire Wire Line
+	1800 6750 1800 6800
+Wire Wire Line
+	2800 6750 2950 6750
+Wire Wire Line
+	1350 7000 1350 7050
+Wire Wire Line
+	1800 6250 1800 6750
+Wire Wire Line
+	1200 6450 1200 6650
+Wire Wire Line
+	1800 5850 1950 5850
+Wire Wire Line
+	1450 6750 1500 6750
 $EndSCHEMATC

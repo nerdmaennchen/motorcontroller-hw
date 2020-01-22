@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:bldc-controller-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Power_Management
-LIBS:st-microelectronics
-LIBS:stm32
-LIBS:w_analog
-LIBS:mpu6000
+EESchema Schematic File Version 4
 LIBS:bldc-controller-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VPP #PWR039
+L bldc-controller-rescue:VPP #PWR039
 U 1 1 578D3DEA
 P 3000 2550
 F 0 "#PWR039" H 3000 2400 50  0001 C CNN
@@ -63,7 +28,7 @@ $EndComp
 Text HLabel 4950 2700 2    60   Output ~ 0
 OUT_A
 $Comp
-L GND #PWR040
+L bldc-controller-rescue:GND #PWR040
 U 1 1 578D4B75
 P 2650 6050
 F 0 "#PWR040" H 2650 5800 50  0001 C CNN
@@ -74,18 +39,18 @@ F 3 "" H 2650 6050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R8
+L bldc-controller-rescue:R_Small R8
 U 1 1 578D546A
 P 5750 5550
 F 0 "R8" H 5780 5570 50  0000 L CNN
 F 1 ".01" H 5780 5510 50  0000 L CNN
-F 2 "Resistors_SMD:R_1210" H 5750 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 5750 5550 50  0001 C CNN
 F 3 "" H 5750 5550 50  0000 C CNN
 	1    5750 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_DGS Q1
+L bldc-controller-rescue:Q_NMOS_DGS Q1
 U 1 1 5808DFCB
 P 4750 2450
 F 0 "Q1" H 5050 2500 50  0000 R CNN
@@ -96,7 +61,7 @@ F 3 "" H 4750 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DRV8313 U2
+L bldc-controller-rescue:DRV8313 U2
 U 1 1 58090F58
 P 2550 4400
 F 0 "U2" H 2550 3800 60  0000 C CNN
@@ -107,7 +72,7 @@ F 3 "" H 2550 4100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR041
+L bldc-controller-rescue:GND #PWR041
 U 1 1 58091532
 P 2250 6150
 F 0 "#PWR041" H 2250 5900 50  0001 C CNN
@@ -118,18 +83,18 @@ F 3 "" H 2250 6150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L bldc-controller-rescue:R_Small R6
 U 1 1 58091D30
 P 2250 6000
 F 0 "R6" H 2280 6020 50  0000 L CNN
 F 1 "1R" H 2280 5960 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 2250 6000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 6000 50  0001 C CNN
 F 3 "" H 2250 6000 50  0000 C CNN
 	1    2250 6000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_DGS Q2
+L bldc-controller-rescue:Q_NMOS_DGS Q2
 U 1 1 58092227
 P 4750 2950
 F 0 "Q2" H 5050 3000 50  0000 R CNN
@@ -140,34 +105,34 @@ F 3 "" H 4750 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C17
+L bldc-controller-rescue:C_Small C17
 U 1 1 580928BC
 P 3500 3450
 F 0 "C17" H 3510 3520 50  0000 L CNN
 F 1 "100nF" H 3510 3370 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3500 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 3450 50  0001 C CNN
 F 3 "" H 3500 3450 50  0000 C CNN
 	1    3500 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R7
+L bldc-controller-rescue:R_Small R7
 U 1 1 58092B58
 P 4350 2600
 F 0 "R7" H 4380 2620 50  0000 L CNN
 F 1 "10R" H 4380 2560 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 4350 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 2600 50  0001 C CNN
 F 3 "" H 4350 2600 50  0000 C CNN
 	1    4350 2600
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R9
+L bldc-controller-rescue:R_Small R9
 U 1 1 58092BC6
 P 4350 2800
 F 0 "R9" H 4380 2820 50  0000 L CNN
 F 1 "10R" H 4380 2760 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 4350 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 2800 50  0001 C CNN
 F 3 "" H 4350 2800 50  0000 C CNN
 	1    4350 2800
 	0    1    1    0   
@@ -175,7 +140,7 @@ $EndComp
 Text HLabel 6750 2700 2    60   Output ~ 0
 OUT_B
 $Comp
-L Q_NMOS_DGS Q3
+L bldc-controller-rescue:Q_NMOS_DGS Q3
 U 1 1 58093D8E
 P 6550 2450
 F 0 "Q3" H 6850 2500 50  0000 R CNN
@@ -186,7 +151,7 @@ F 3 "" H 6550 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_DGS Q4
+L bldc-controller-rescue:Q_NMOS_DGS Q4
 U 1 1 58093D94
 P 6550 2950
 F 0 "Q4" H 6850 3000 50  0000 R CNN
@@ -197,23 +162,23 @@ F 3 "" H 6550 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R10
+L bldc-controller-rescue:R_Small R10
 U 1 1 58093D9A
 P 6150 2600
 F 0 "R10" H 6180 2620 50  0000 L CNN
 F 1 "10R" H 6180 2560 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6150 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6150 2600 50  0001 C CNN
 F 3 "" H 6150 2600 50  0000 C CNN
 	1    6150 2600
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R11
+L bldc-controller-rescue:R_Small R11
 U 1 1 58093DA0
 P 6150 2800
 F 0 "R11" H 6180 2820 50  0000 L CNN
 F 1 "10R" H 6180 2760 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 6150 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6150 2800 50  0001 C CNN
 F 3 "" H 6150 2800 50  0000 C CNN
 	1    6150 2800
 	0    1    1    0   
@@ -221,7 +186,7 @@ $EndComp
 Text HLabel 8700 2700 2    60   Output ~ 0
 OUT_C
 $Comp
-L Q_NMOS_DGS Q5
+L bldc-controller-rescue:Q_NMOS_DGS Q5
 U 1 1 58093F6B
 P 8500 2450
 F 0 "Q5" H 8800 2500 50  0000 R CNN
@@ -232,7 +197,7 @@ F 3 "" H 8500 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_DGS Q6
+L bldc-controller-rescue:Q_NMOS_DGS Q6
 U 1 1 58093F71
 P 8500 2950
 F 0 "Q6" H 8800 3000 50  0000 R CNN
@@ -243,62 +208,62 @@ F 3 "" H 8500 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R13
+L bldc-controller-rescue:R_Small R13
 U 1 1 58093F77
 P 8100 2600
 F 0 "R13" H 8130 2620 50  0000 L CNN
 F 1 "10R" H 8130 2560 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 8100 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 2600 50  0001 C CNN
 F 3 "" H 8100 2600 50  0000 C CNN
 	1    8100 2600
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R14
+L bldc-controller-rescue:R_Small R14
 U 1 1 58093F7D
 P 8100 2800
 F 0 "R14" H 8130 2820 50  0000 L CNN
 F 1 "10R" H 8130 2760 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 8100 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 2800 50  0001 C CNN
 F 3 "" H 8100 2800 50  0000 C CNN
 	1    8100 2800
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C18
+L bldc-controller-rescue:C_Small C18
 U 1 1 58094215
 P 3500 4000
 F 0 "C18" H 3510 4070 50  0000 L CNN
 F 1 "100nF" H 3510 3920 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3500 4000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 4000 50  0001 C CNN
 F 3 "" H 3500 4000 50  0000 C CNN
 	1    3500 4000
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C19
+L bldc-controller-rescue:C_Small C19
 U 1 1 5809427F
 P 3500 4550
 F 0 "C19" H 3510 4620 50  0000 L CNN
 F 1 "100nF" H 3510 4470 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3500 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 4550 50  0001 C CNN
 F 3 "" H 3500 4550 50  0000 C CNN
 	1    3500 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C22
+L bldc-controller-rescue:C_Small C22
 U 1 1 580955A3
 P 6000 5550
 F 0 "C22" H 6010 5620 50  0000 L CNN
 F 1 "100nF" H 6010 5470 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6000 5550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6000 5550 50  0001 C CNN
 F 3 "" H 6000 5550 50  0000 C CNN
 	1    6000 5550
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR042
+L bldc-controller-rescue:GND #PWR042
 U 1 1 580959D2
 P 5750 5750
 F 0 "#PWR042" H 5750 5500 50  0001 C CNN
@@ -309,23 +274,23 @@ F 3 "" H 5750 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R12
+L bldc-controller-rescue:R_Small R12
 U 1 1 58095C3C
 P 5500 5550
 F 0 "R12" H 5530 5570 50  0000 L CNN
 F 1 ".01" H 5530 5510 50  0000 L CNN
-F 2 "Resistors_SMD:R_1210" H 5500 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 5500 5550 50  0001 C CNN
 F 3 "" H 5500 5550 50  0000 C CNN
 	1    5500 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C23
+L bldc-controller-rescue:C_Small C23
 U 1 1 58095C43
 P 6150 5550
 F 0 "C23" H 6160 5620 50  0000 L CNN
 F 1 "100nF" H 6160 5470 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6150 5550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6150 5550 50  0001 C CNN
 F 3 "" H 6150 5550 50  0000 C CNN
 	1    6150 5550
 	-1   0    0    1   
@@ -335,9 +300,11 @@ nOCTW
 Text HLabel 1450 3400 0    60   Output ~ 0
 nFAULT
 $Comp
-L VCC #PWR043
+L bldc-controller-rescue:VCC #PWR043
 U 1 1 580967B5
 P 1700 2950
+AR Path="/580967B5" Ref="#PWR043"  Part="1" 
+AR Path="/5809B7F6/580967B5" Ref="#PWR043"  Part="1" 
 F 0 "#PWR043" H 1700 2800 50  0001 C CNN
 F 1 "VCC" H 1700 3100 50  0000 C CNN
 F 2 "" H 1700 2950 50  0000 C CNN
@@ -346,34 +313,34 @@ F 3 "" H 1700 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L bldc-controller-rescue:C_Small C2
 U 1 1 58096823
 P 2200 2650
 F 0 "C2" H 2210 2720 50  0000 L CNN
 F 1 "22nF" H 2210 2570 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2200 2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 2650 50  0001 C CNN
 F 3 "" H 2200 2650 50  0000 C CNN
 	1    2200 2650
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R2
+L bldc-controller-rescue:R_Small R2
 U 1 1 58096CE5
 P 1600 3150
 F 0 "R2" H 1630 3170 50  0000 L CNN
 F 1 "10kR" H 1630 3110 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1600 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 3150 50  0001 C CNN
 F 3 "" H 1600 3150 50  0000 C CNN
 	1    1600 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R4
+L bldc-controller-rescue:R_Small R4
 U 1 1 58096D97
 P 1800 3150
 F 0 "R4" H 1830 3170 50  0000 L CNN
 F 1 "10kR" H 1830 3110 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1800 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 3150 50  0001 C CNN
 F 3 "" H 1800 3150 50  0000 C CNN
 	1    1800 3150
 	1    0    0    -1  
@@ -403,9 +370,9 @@ DRV_SCLK
 Text HLabel 1650 4000 0    60   Input ~ 0
 DRV_DC_CAL
 Wire Wire Line
-	2650 5850 2650 6050
+	2650 5850 2650 6000
 Wire Wire Line
-	2450 6000 2850 6000
+	2450 6000 2550 6000
 Wire Wire Line
 	2450 6000 2450 5850
 Wire Wire Line
@@ -442,9 +409,9 @@ Wire Wire Line
 Wire Wire Line
 	4500 2450 4550 2450
 Wire Wire Line
-	4850 2650 4850 2750
+	4850 2650 4850 2700
 Wire Wire Line
-	3850 2700 4950 2700
+	3850 2700 4850 2700
 Connection ~ 4850 2700
 Wire Wire Line
 	3600 3450 3650 3450
@@ -468,9 +435,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 2450 6350 2450
 Wire Wire Line
-	6650 2650 6650 2750
+	6650 2650 6650 2700
 Wire Wire Line
-	5650 2700 6750 2700
+	5650 2700 6650 2700
 Connection ~ 6650 2700
 Wire Wire Line
 	8000 2800 7700 2800
@@ -489,14 +456,14 @@ Wire Wire Line
 Wire Wire Line
 	8250 2450 8300 2450
 Wire Wire Line
-	8600 2650 8600 2750
+	8600 2650 8600 2700
 Wire Wire Line
-	7600 2700 8700 2700
+	7600 2700 8600 2700
 Connection ~ 8600 2700
 Wire Wire Line
-	4450 3200 8600 3200
+	4450 3200 4850 3200
 Wire Wire Line
-	8600 5050 8600 3150
+	8600 5050 8600 3200
 Wire Wire Line
 	3400 4550 3300 4550
 Wire Wire Line
@@ -508,7 +475,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3650 3850 2700
 Wire Wire Line
-	3300 3650 3850 3650
+	3300 3650 3650 3650
 Wire Wire Line
 	3950 2800 3950 3750
 Wire Wire Line
@@ -522,7 +489,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4200 5650 2700
 Wire Wire Line
-	3300 4200 5650 4200
+	3300 4200 3650 4200
 Wire Wire Line
 	5750 2800 5750 4300
 Wire Wire Line
@@ -536,7 +503,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 4750 7600 2700
 Wire Wire Line
-	3300 4750 7600 4750
+	3300 4750 3650 4750
 Wire Wire Line
 	7700 2800 7700 4850
 Wire Wire Line
@@ -544,7 +511,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 4950 8200 4950
 Wire Wire Line
-	5750 5650 5750 5750
+	5750 5650 5750 5700
 Connection ~ 5750 5700
 Connection ~ 5500 5700
 Wire Wire Line
@@ -558,19 +525,19 @@ Wire Wire Line
 Wire Wire Line
 	1700 2950 1700 3000
 Wire Wire Line
-	1600 3000 1800 3000
+	1600 3000 1700 3000
 Wire Wire Line
 	1600 3000 1600 3050
 Wire Wire Line
 	1800 3000 1800 3050
 Connection ~ 1700 3000
 Wire Wire Line
-	1450 3300 1900 3300
+	1450 3300 1600 3300
 Wire Wire Line
 	1600 3250 1600 3300
 Connection ~ 1600 3300
 Wire Wire Line
-	1450 3400 1900 3400
+	1450 3400 1800 3400
 Wire Wire Line
 	1800 3250 1800 3400
 Connection ~ 1800 3400
@@ -617,9 +584,11 @@ Wire Wire Line
 Wire Wire Line
 	4600 5200 3300 5200
 $Comp
-L VCC #PWR044
+L bldc-controller-rescue:VCC #PWR044
 U 1 1 5808EC23
 P 2800 2550
+AR Path="/5808EC23" Ref="#PWR044"  Part="1" 
+AR Path="/5809B7F6/5808EC23" Ref="#PWR044"  Part="1" 
 F 0 "#PWR044" H 2800 2400 50  0001 C CNN
 F 1 "VCC" H 2800 2700 50  0000 C CNN
 F 2 "" H 2800 2550 50  0000 C CNN
@@ -630,12 +599,12 @@ $EndComp
 Wire Wire Line
 	2800 2550 2800 2850
 $Comp
-L C_Small C11
+L bldc-controller-rescue:C_Small C11
 U 1 1 5808F047
 P 2450 2650
 F 0 "C11" H 2460 2720 50  0000 L CNN
 F 1 "2.2uF" H 2460 2570 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2450 2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 2650 50  0001 C CNN
 F 3 "" H 2450 2650 50  0000 C CNN
 	1    2450 2650
 	-1   0    0    1   
@@ -643,7 +612,7 @@ $EndComp
 Wire Wire Line
 	2450 2750 2450 2850
 $Comp
-L GND #PWR045
+L bldc-controller-rescue:GND #PWR045
 U 1 1 5808F23A
 P 2350 2200
 F 0 "#PWR045" H 2350 1950 50  0001 C CNN
@@ -656,7 +625,7 @@ $EndComp
 Wire Wire Line
 	2350 2200 2350 2150
 Wire Wire Line
-	2350 2150 2650 2150
+	2350 2150 2450 2150
 Wire Wire Line
 	2450 2150 2450 2550
 Wire Wire Line
@@ -670,31 +639,31 @@ Wire Wire Line
 	2650 2150 2650 2550
 Connection ~ 2550 2150
 $Comp
-L C_Small C15
+L bldc-controller-rescue:C_Small C15
 U 1 1 5808FA77
 P 2550 2650
 F 0 "C15" H 2560 2720 50  0000 L CNN
 F 1 "2.2uF" H 2560 2570 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2550 2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 2650 50  0001 C CNN
 F 3 "" H 2550 2650 50  0000 C CNN
 	1    2550 2650
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C16
+L bldc-controller-rescue:C_Small C16
 U 1 1 5808FADF
 P 2650 2650
 F 0 "C16" H 2660 2720 50  0000 L CNN
 F 1 "2.2uF" H 2660 2570 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2650 2650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2650 2650 50  0001 C CNN
 F 3 "" H 2650 2650 50  0000 C CNN
 	1    2650 2650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	900  2450 1100 2450
+	900  2450 1000 2450
 Wire Wire Line
-	900  2150 1100 2150
+	900  2150 1000 2150
 Wire Wire Line
 	900  2400 900  2450
 Connection ~ 1000 2150
@@ -703,7 +672,7 @@ Wire Wire Line
 Wire Wire Line
 	900  2200 900  2150
 $Comp
-L VPP #PWR046
+L bldc-controller-rescue:VPP #PWR046
 U 1 1 578D524A
 P 1000 2100
 F 0 "#PWR046" H 1000 1950 50  0001 C CNN
@@ -714,7 +683,7 @@ F 3 "" H 1000 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR047
+L bldc-controller-rescue:GND #PWR047
 U 1 1 578D512F
 P 1000 2550
 F 0 "#PWR047" H 1000 2300 50  0001 C CNN
@@ -725,12 +694,12 @@ F 3 "" H 1000 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C21
+L bldc-controller-rescue:C_Small C21
 U 1 1 578D5083
 P 1100 2300
 F 0 "C21" H 1110 2370 50  0000 L CNN
 F 1 "100nF" H 1110 2220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1100 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1100 2300 50  0001 C CNN
 F 3 "" H 1100 2300 50  0000 C CNN
 	1    1100 2300
 	1    0    0    -1  
@@ -743,7 +712,7 @@ Wire Wire Line
 	1100 2450 1100 2400
 Connection ~ 1000 2450
 $Comp
-L VPP #PWR048
+L bldc-controller-rescue:VPP #PWR048
 U 1 1 581349A1
 P 4850 2150
 F 0 "#PWR048" H 4850 2000 50  0001 C CNN
@@ -756,7 +725,7 @@ $EndComp
 Wire Wire Line
 	4850 2150 4850 2250
 $Comp
-L VPP #PWR049
+L bldc-controller-rescue:VPP #PWR049
 U 1 1 58134CB7
 P 6650 2200
 F 0 "#PWR049" H 6650 2050 50  0001 C CNN
@@ -769,7 +738,7 @@ $EndComp
 Wire Wire Line
 	6650 2200 6650 2250
 $Comp
-L VPP #PWR050
+L bldc-controller-rescue:VPP #PWR050
 U 1 1 58135074
 P 8600 2200
 F 0 "#PWR050" H 8600 2050 50  0001 C CNN
@@ -786,12 +755,12 @@ Wire Wire Line
 Wire Wire Line
 	1900 4400 1650 4400
 $Comp
-L CP1_Small C20
+L bldc-controller-rescue:CP1_Small C20
 U 1 1 58134C27
 P 900 2300
 F 0 "C20" H 910 2370 50  0000 L CNN
 F 1 "10uF" H 910 2220 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 900 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x3" H 900 2300 50  0001 C CNN
 F 3 "" H 900 2300 50  0000 C CNN
 F 4 "http://www.digikey.com/product-detail/en/kemet/ESK106M063AC3AA/399-6100-ND/2712506" H 900 2300 60  0001 C CNN "digikey"
 	1    900  2300
@@ -807,15 +776,15 @@ Wire Wire Line
 Wire Wire Line
 	5500 5300 5500 5450
 Wire Wire Line
-	5750 5050 5750 5450
+	5750 5050 5750 5300
 Connection ~ 5750 5300
 Wire Wire Line
 	6150 5300 6150 5450
 Connection ~ 6000 5300
 Wire Wire Line
-	6650 5050 6650 3150
+	6650 5050 6650 3200
 Wire Wire Line
-	4850 3150 4850 5050
+	4850 3150 4850 3200
 Wire Wire Line
 	5500 5700 5500 5650
 Connection ~ 6250 3200
@@ -829,7 +798,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 4950 8200 3200
 Wire Wire Line
-	4850 5050 8600 5050
+	4850 5050 5750 5050
 Connection ~ 5750 5050
 Connection ~ 6650 5050
 Connection ~ 8600 3200
@@ -837,14 +806,14 @@ Wire Wire Line
 	4600 5200 4600 5700
 Connection ~ 5500 5300
 Wire Wire Line
-	4600 5700 6150 5700
+	4600 5700 5500 5700
 Wire Wire Line
-	4700 5300 6150 5300
+	4700 5300 5500 5300
 Wire Wire Line
 	4700 5100 4700 5300
 NoConn ~ 1900 5400
 $Comp
-L GND #PWR051
+L bldc-controller-rescue:GND #PWR051
 U 1 1 581792E5
 P 3400 5500
 F 0 "#PWR051" H 3400 5250 50  0001 C CNN
@@ -855,10 +824,86 @@ F 3 "" H 3400 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5500 3400 5300
+	3400 5500 3400 5400
 Wire Wire Line
 	3400 5300 3300 5300
 Wire Wire Line
 	3300 5400 3400 5400
 Connection ~ 3400 5400
+Wire Wire Line
+	2550 6000 2650 6000
+Wire Wire Line
+	2650 6000 2650 6050
+Wire Wire Line
+	2650 6000 2750 6000
+Wire Wire Line
+	2750 6000 2850 6000
+Wire Wire Line
+	4850 2700 4850 2750
+Wire Wire Line
+	4850 2700 4950 2700
+Wire Wire Line
+	3650 3650 3850 3650
+Wire Wire Line
+	6650 2700 6650 2750
+Wire Wire Line
+	6650 2700 6750 2700
+Wire Wire Line
+	8600 2700 8600 2750
+Wire Wire Line
+	8600 2700 8700 2700
+Wire Wire Line
+	5750 5700 5750 5750
+Wire Wire Line
+	5750 5700 6000 5700
+Wire Wire Line
+	5500 5700 5750 5700
+Wire Wire Line
+	1700 3000 1800 3000
+Wire Wire Line
+	1600 3300 1900 3300
+Wire Wire Line
+	1800 3400 1900 3400
+Wire Wire Line
+	3650 4200 5650 4200
+Wire Wire Line
+	3650 4750 7600 4750
+Wire Wire Line
+	2450 2150 2550 2150
+Wire Wire Line
+	2550 2150 2650 2150
+Wire Wire Line
+	1000 2150 1100 2150
+Wire Wire Line
+	1000 2450 1100 2450
+Wire Wire Line
+	6000 5700 6150 5700
+Wire Wire Line
+	5750 5300 5750 5450
+Wire Wire Line
+	5750 5300 6000 5300
+Wire Wire Line
+	6000 5300 6150 5300
+Wire Wire Line
+	6250 3200 6650 3200
+Wire Wire Line
+	4850 3200 6250 3200
+Wire Wire Line
+	4850 3200 4850 5050
+Wire Wire Line
+	8200 3200 8600 3200
+Wire Wire Line
+	6650 3200 6650 3150
+Wire Wire Line
+	6650 3200 8200 3200
+Wire Wire Line
+	5750 5050 6650 5050
+Wire Wire Line
+	6650 5050 8600 5050
+Wire Wire Line
+	8600 3200 8600 3150
+Wire Wire Line
+	5500 5300 5750 5300
+Wire Wire Line
+	3400 5400 3400 5300
 $EndSCHEMATC
